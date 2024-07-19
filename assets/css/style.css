@@ -616,76 +616,236 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# About
+# product-info
 --------------------------------------------------------------*/
-.about {
-  background-color: #fff;
+/** smart safety */
+
+.product-smart-safety {
+  background-color: #F1F5F9;
   margin-top: -8rem;
   border-radius: 5rem 5rem 0 0;
   padding-top: 10rem;
   /* padding: 10px 0; */
+  /* padding-bottom: -10rem; */
 }
 
-.about h3 {
-  font-weight: 400;
-  font-size: 32px;
-  padding-top: 1.5rem;
+.product-smart-safety .text-container {
+  padding-top: 10rem;
+  top: 70%;
+  left: 70%;
+  transform: translate(1.5rem, 8%);
 }
 
-.about .product-img {
-  width: 100%;
-  height: 23rem;
-  object-fit: contain;
-}
-
-.about img {
-  width: 50%;
-  height: 80px;
-  object-fit: contain;
-}
-/* 
-.about ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.about ul li + li {
-  margin-top: 10px;
-}
-
-.about ul li {
-  position: relative;
-  padding-left: 26px;
-}
-
-.about ul i {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 22px;
-  color: #3498db;
-}
-
-.about .icon-boxes {
-  padding-top: 10px;
-}
-
-.about .icon-boxes h4 {
-  font-size: 20px;
+.product-smart-safety h3 {
   font-weight: 700;
-  margin-top: 5px;
+  font-size: 40px;
+  padding-top: 1rem;
+  max-width: 50rem;
+  height: 81px;
+  color: #000;
 }
 
-.about .icon-boxes i {
-  font-size: 48px;
-  color: #3498db;
+.product-smart-safety p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  /* margin-bottom: 0; */
+  /* padding: 0 20px; */
+  padding-top: 2.5rem;
+  max-width: 35rem;
 }
 
-.about .icon-boxes p {
-  font-size: 15px;
-  color: #848484;
-} */
+.product-smart-safety .product-img {
+  width: 200%;
+  height: 115vh;
+  object-fit: contain;
+  margin-left: -7rem;
+  margin-top: -10rem;
+  margin-bottom: -5rem;
+  margin-right: 5rem;
+}
+
+.product-smart-safety img {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+  
+}
+
+#product-smart-safety .btn-learn-more {
+  background-color: #26A7B5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+}
+
+#product-smart-safety .btn-learn-more:hover {
+  background-color: #4ed8e7;
+  color: #fff;
+}
+
+/** sales trace  */
+
+.product-sales-trace {
+  background-color: #fff;
+  /* margin-top: -8rem; */
+  /* border-radius: 5rem 5rem 0 0; */
+  padding-top: 5rem;
+  /* padding-right: 5rem; */
+  /* padding: 10px 0; */
+  /* padding-bottom: -10rem; */
+}
+
+.product-sales-trace .text-container {
+  padding-top: 10rem;
+  top: 70%;
+  left: 70%;
+  transform: translate(1.5rem, 8%);
+}
+
+.product-sales-trace .text-product {
+  padding-top: 5rem;
+   /* top: 70%; */
+  /* left: 70%; */
+  /* transform: translate(1.5rem, 8%); */
+}
+
+.product-sales-trace h3 {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 1rem;
+  max-width: 50rem;
+  height: 81px;
+  color: #000;
+}
+
+.product-sales-trace p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  /* margin-bottom: 0; */
+  /* padding: 0 20px; */
+  padding-top: 2.5rem;
+  max-width: 35rem;
+}
+
+.product-sales-trace .product-img {
+  width: 200%;
+  height: 115vh;
+  object-fit: contain;
+  margin-left: 5.45rem;
+  margin-top: -12rem;
+  /* margin-bottom: -5rem; */
+  /* margin-right: 5rem; */
+}
+
+.product-sales-trace img {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+  
+}
+
+#product-sales-trace .btn-learn-more {
+  background-color: #26A7B5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+}
+
+#product-sales-trace .btn-learn-more:hover {
+  background-color: #4ed8e7;
+  color: #fff;
+}
+
+/** goodeva enterprise */
+
+.product-goodeva-enterprise {
+  background-color: #F1F5F9;
+  /* margin-top: -8rem; */
+  /* border-radius: 5rem 5rem 0 0; */
+  /* padding-top: 5rem; */
+  /* padding: 10px 0; */
+  /* padding-bottom: -20rem; */
+  height: 30rem;
+}
+
+.product-goodeva-enterprise .text-container {
+  padding-top: 10rem;
+  top: 70%;
+  left: 70%;
+  transform: translate(1.5rem, 8%);
+}
+
+
+.product-goodeva-enterprise h3 {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 1rem;
+  max-width: 50rem;
+  height: 81px;
+  color: #000;
+}
+
+.product-goodeva-enterprise p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  /* margin-bottom: 0; */
+  /* padding: 0 20px; */
+  padding-top: 2.5rem;
+  max-width: 35rem;
+}
+
+.product-goodeva-enterprise .product-img {
+  width: 200%;
+  height: 115vh;
+  object-fit: contain;
+  margin-left: -7rem;
+  margin-top: -10rem;
+  margin-bottom: -5rem;
+  margin-right: 5rem;
+}
+
+.product-goodeva-enterprise img {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+  
+}
+
+#product-goodeva-enterprise .btn-learn-more {
+  background-color: #26A7B5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+}
+
+#product-goodeva-enterprise .btn-learn-more:hover {
+  background-color: #4ed8e7;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Skills
@@ -773,7 +933,7 @@ h6 {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+/* .services .icon-box {
   padding: 30px;
   border-radius: 6px;
   background: #fff;
@@ -811,13 +971,14 @@ h6 {
 
 .services .icon-box:hover h4 a {
   color: #3498db;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
   padding: 60px 0;
+  
 }
 
 .portfolio #portfolio-flters {
@@ -1040,6 +1201,20 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# portofolio-client
+--------------------------------------------------------------*/
+
+#portofolio-client {
+  /* padding: 60px 0; */
+  background-color: #f1f5f9;
+  color: #000;
+}
+
+.section-title h1 {
+  font-weight: 700 !important;
+}
+
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
@@ -1233,11 +1408,11 @@ h6 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.get-started {
+#get-started {
   /* background-image: url("https://s3-alpha-sig.figma.com/img/2119/c8fa/77894dc73b06dfc691130a2b3126396c?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XqgOWd7a11Q2h4MMkw2Hh5QHohujjoRa-uG5h-pZ5s9oS84Jzn6rs-8PfudPOaS1~XQr55GO1rwZXVyTXbX-1-3JbgluoWnDQAl6~BvVxQbAYeSQYH4YeCu07W5CWkj5dITUdpuVREGY5lGkfO52MywAllhUCL8FR9fbGYzU8Q9yzFTfL3uQZ7IzvP5C2dNOCwOe-P4U6pSgQeRV243uFwRtq7jlNiI6egZSt88ggFORF~d1D5fL6rVv0mytISXVxcjxuKpEw8MpLdohzitfvI0HQTBYBb-f1PZDhsnvn62BuxJX00oxWpLLcinTLI7Fy-W3nZrXWPYvoTb3GZ9ozA__"); */
-  background-image: url("/assets/img/get-started.png");
+  background-image: url("https://github.com/Dickybulin26/revamp-goodeva-pkl/blob/main/assets/img/get-started.png?raw=true");
   color: #fff;
-  height: auto;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1248,7 +1423,7 @@ h6 {
   align-items: center;
 }
 
-.get-started .container {
+#get-started .container {
   padding-top: 80px;
   padding-bottom: 40px;
   justify-content: center;
@@ -1257,6 +1432,11 @@ h6 {
   flex-direction: column;
   z-index: 9 !important;
   opacity: 5;
+  text-align: center;
+}
+
+#get-started .container h2 {
+  padding-bottom: 2rem;
 }
 
 @keyframes animate-loading {
