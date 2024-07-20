@@ -132,27 +132,7 @@ h6 {
 /*--------------------------------------------------------------
 # Header Social Links
 --------------------------------------------------------------*/
-.header-social-links {
-  margin: 0 0 0 30px;
-}
 
-.header-social-links a {
-  color: #9ba6af;
-  padding-left: 8px;
-  display: inline-block;
-  line-height: 0px;
-  transition: 0.3s;
-}
-
-.header-social-links a:hover {
-  color: #3498db;
-}
-
-@media (max-width: 768px) {
-  .header-social-links {
-    margin: 0 15px 0 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -825,7 +805,7 @@ h6 {
   width: 50%;
   height: 100px;
   object-fit: contain;
-  
+  padding-right: 3rem;
 }
 
 #product-goodeva-enterprise .btn-learn-more {
@@ -847,10 +827,18 @@ h6 {
   color: #fff;
 }
 
+/** news-section */
+
+/* .news-section {
+  background-color: #F1F5F9;
+  height: 30rem;
+} */
+
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
+/* .skills .progress {
   height: 60px;
   display: block;
   background: none;
@@ -881,12 +869,12 @@ h6 {
   height: 10px;
   transition: 0.9s;
   background-color: #5faee3;
-}
+} */
 
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts {
+/* .counts {
   background: white;
   padding: 30px 0 40px 0;
 }
@@ -928,7 +916,7 @@ h6 {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
@@ -978,6 +966,7 @@ h6 {
 --------------------------------------------------------------*/
 .portfolio {
   padding: 60px 0;
+  background-color: #f1f5f9;
   
 }
 
@@ -986,6 +975,8 @@ h6 {
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .portfolio #portfolio-flters li {
@@ -1204,7 +1195,9 @@ h6 {
 # portofolio-client
 --------------------------------------------------------------*/
 
-#portofolio-client {
+#product-goodeva-enterprise,
+#portofolio-client,
+#client-feedback {
   /* padding: 60px 0; */
   background-color: #f1f5f9;
   color: #000;
@@ -1217,7 +1210,7 @@ h6 {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
+/* .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
@@ -1291,12 +1284,12 @@ h6 {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #3498db;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
+/* .team {
   background-color: #f6f6f6;
 }
 
@@ -1349,6 +1342,112 @@ h6 {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+} */
+
+
+/** client-feedback */
+
+#client-feedback {
+  background-color: #f1f5f9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#client-feedback .client-img img {
+  /* padding-top: 5rem; */
+  /* top: 70%;
+  left: 70%;
+  transform: translate(1.5rem, 8%); */
+  object-fit: cover;
+  width: 62%;
+  height: 30rem;
+  margin-left: 10rem;
+  border-radius: 15px;
+}
+
+#client-feedback .text-feedback {
+  padding-top: 5rem;
+   /* top: 70%; */
+  /* left: 70%; */
+  /* transform: translate(1.5rem, 8%); */
+  padding-left: 10rem;
+}
+
+#client-feedback .client-testimoni {
+  font-style: italic;
+  color: #00000080;
+}
+
+#client-feedback h3 {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 1rem;
+  max-width: 50rem;
+  height: 81px;
+  color: #000;
+}
+
+#client-feedback p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  /* margin-bottom: 0; */
+  /* padding: 0 20px; */
+  padding-top: 2.5rem;
+  max-width: 35rem;
+}
+
+.client-name {
+  font-weight: 700;
+  font-size: 22px;
+  /* padding-top: 1rem; */
+  max-width: 50rem;
+  /* height: 81px; */
+  color: #000;
+  display: block;
+}
+
+.client-company {
+  font-size: 22px;
+}
+
+/* 
+#client-feedback .product-img {
+  width: 200%;
+  height: 115vh;
+  object-fit: contain;
+  margin-left: 5.45rem;
+  margin-top: -12rem; */
+  /* margin-bottom: -5rem; */
+  /* margin-right: 5rem; */
+/* } */
+
+
+
+.button-client-feedback {
+
+  display: flex;
+  gap: 2rem;
+  padding-top: 2.5rem;
+}
+
+#client-feedback .btn-learn-more {
+  background-color: #26A7B5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+}
+
+#client-feedback .btn-learn-more:hover {
+  background-color: #4ed8e7;
+  color: #fff;
 }
 
 /** section liputan */
@@ -1409,8 +1508,7 @@ h6 {
 }
 
 #get-started {
-  /* background-image: url("https://s3-alpha-sig.figma.com/img/2119/c8fa/77894dc73b06dfc691130a2b3126396c?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XqgOWd7a11Q2h4MMkw2Hh5QHohujjoRa-uG5h-pZ5s9oS84Jzn6rs-8PfudPOaS1~XQr55GO1rwZXVyTXbX-1-3JbgluoWnDQAl6~BvVxQbAYeSQYH4YeCu07W5CWkj5dITUdpuVREGY5lGkfO52MywAllhUCL8FR9fbGYzU8Q9yzFTfL3uQZ7IzvP5C2dNOCwOe-P4U6pSgQeRV243uFwRtq7jlNiI6egZSt88ggFORF~d1D5fL6rVv0mytISXVxcjxuKpEw8MpLdohzitfvI0HQTBYBb-f1PZDhsnvn62BuxJX00oxWpLLcinTLI7Fy-W3nZrXWPYvoTb3GZ9ozA__"); */
-  background-image: url("https://github.com/Dickybulin26/revamp-goodeva-pkl/blob/main/assets/img/get-started.png?raw=true");
+  background-image: url("../img/get-started.png");
   color: #fff;
   height: 100vh;
   background-size: cover;
