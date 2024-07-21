@@ -829,11 +829,92 @@ h6 {
 
 /** news-section */
 
-/* .news-section {
-  background-color: #F1F5F9;
-  height: 30rem;
+#news-section {
+  background-color: #f1f5f9;
+}
+
+#news-section .nav-tabs {
+  border: none;
+  display: flex;
+  justify-content: center;
+  z-index: 3 !important;
+  position: relative;
+}
+
+#news-section .nav-link {
+  border: none;
+  color: #6c757d; /* Warna teks normal */
+  font-weight: bold;
+}
+
+#news-section .nav-link.active {
+  border-bottom: 2px solid #26A7B5; /* Warna garis bawah saat aktif */
+  color: #1d1d1d; 
+}
+
+#news-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+#news-section .card-deck {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+#news-section .card {
+  width: 25rem;
+  border-radius: 10rem;
+}
+
+#news-section .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#news-section .card-body {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: #02060973;
+  font-size: 12px;
+  top: 0;
+}
+
+/* #news-section .card img {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 } */
 
+#news-section .card-deck .card-logo img{
+  width: 124px;
+  /* height: 124px; */
+  object-fit: contain;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+#news-section .card-title {
+  padding-top: 9.3rem;
+}
+
+#news-section .card-title .card-text {
+  /* padding-top: 9.3rem; */
+}
 
 /*--------------------------------------------------------------
 # Skills
