@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slick 1</title>
+    <title>owl corousel</title>
     <!-- Slick CSS -->
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
@@ -19,14 +19,19 @@
       rel="stylesheet"
     />
 
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
-    />
+    /> -->
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl-corousel.css" />
 
     <!-- JQuery -->
     <script
@@ -34,42 +39,11 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
 
-    <!-- Slick JS -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <!-- Our Script -->
-    <script type="text/javascript" src="script.js"></script>
   </head>
-  <style>
-    .row {
-      margin-right: 0;
-      margin-left: 0;
-    }
-
-    .owl-dots {
-      display: none;
-    }
-
-    /* .owl-corousel .owl-nav {
-        position: absolute;
-        top: 77%;
-        left: 63%;
-        right: 26%;
-        display: inline-block;
-    } */
-
-    .owl-carousel .owl-nav {
-      position: absolute;
-      top: 77%;
-      left: 63%;
-      right: 26%;
-      display: inline-block;
-    }
-  </style>
-
   <body>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="featured-carousel owl-carousel">
@@ -80,19 +54,21 @@
                   <div
                     class="img"
                     style="
-                      background-image: url(https://s3-alpha-sig.figma.com/img/9411/de85/0513ff19575410cdb5bd8825a5399b60?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XxeJpHRK9kppD7FvvEXToLcsF~itEri5mzb6hFUe-pbIARZHeCvfAKbDa3SiSsasPgxh5IkfeVZt8UkVyDasq9hbjFSHHYIIOiIsO8qg9q66jDFV78EldU~K4I6iqYqTnPrHv03aLWRMNwAjWwpprIht4eR5z9xTQ6NKCm1sObFMJ3hw1ATXemR9Y7XzfQekaJqn0Vn-EYGs4aTIoD0dA8ql4MswbRu647J5S~u~EX3aTdAupS5I93lBYx50tNARxe-p7M~ft4mEYF1r2daHjyYY2pfAybLgpvi00~xPMI3jwT9v3539gLAdaBKBc~yVC6detVwWc6ATFNMjgdpM8Q__);
+                      background-image: url(https://s3-alpha-sig.figma.com/img/6db0/cbc8/8b9e4ff24413666c0c483ac9a7c0e6d4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c8zjTI~-lpXpJtvuYIqfrWUBcG9MnLWm6B2oeJJmK2Xkmmzls~TOjjT5r0MGGEZRR63rBPmBZvHjtmopAov8BzNxZNxLZReaTmy79AXFvm1u21Ku-nQiPLvv~dY33PgCCB4PKxLmPL6bjuNaWQcPTI9dqaawF8NoknlupBFi8TlCtM186GAgSwqQpnu0DNTNkAWe7yxumvloTo6NgPZyFFUiivDR~QllSvTS4V0hocMyfS6ychyTKvKninLKHA5PkFYcdUpCZI2KcbGymnuDlJBXd1mdJ4ax2B~npEqpQvFjdPQrI1yJzl0vlSqIFiUnNjIScm03yK7dIMtYBX0kJA__);
                     "
                   ></div>
                   <div
-                    class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center"
+                    class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
                   >
                     <div class="desc w-100">
-                      <p class="h3 mb-5">
-                        "Incredible services and amazing customer support
+                      <p class="h3 mb-3">Targeting Sales</p>
+                      <p>
+                        Setup a target for a group of sales, and you can track
+                        selling achievement in realtime in the apps.
                       </p>
                       <div class="pt-4">
-                        <p class="name mb-0">&mdash; Joy Smith</p>
-                        <span class="position">Project Manager</span>
+                        <!-- <p class="name mb-0">&mdash; Rony Smith</p>
+                        <span class="position">Project Manager</span> -->
                       </div>
                     </div>
                   </div>
@@ -111,15 +87,17 @@
                     "
                   ></div>
                   <div
-                    class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center"
+                    class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
                   >
                     <div class="desc w-100">
-                      <p class="h3 mb-5">
-                        "Incredible services and amazing customer support
+                      <p class="h3 mb-3">ayam gorreng</p>
+                      <p>
+                        Setup a target for a group of sales, and you can track
+                        selling achievement in realtime in the apps.
                       </p>
                       <div class="pt-4">
-                        <p class="name mb-0">&mdash; Rony Smith</p>
-                        <span class="position">Project Manager</span>
+                        <!-- <p class="name mb-0">&mdash; Rony Smith</p>
+                        <span class="position">Project Manager</span> -->
                       </div>
                     </div>
                   </div>
@@ -134,19 +112,21 @@
                   <div
                     class="img"
                     style="
-                      background-image: url(https://s3-alpha-sig.figma.com/img/a6a2/833b/dcd1ad28514b1eecb8ec23f65fb01334?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UbNHG6iNlQLFkZpYpGcDIrLds3ud0QOVgUie4YjbAgwuJ9f96Zx39lLzaaFEjqVpK979K2~ShYQA0JNOMS2YDhedXSxeQ4KT3j7ePQkn3uvo~8-p12DI6hcdV2GjH3JMXvq-eUrzuYs9Gd2w8SQ3KW344bil2VITmFfrAijxXVyCzvIsoeVFPi3ueIo2jiQPO1o0KPx88bz~t~swudzRYFcqSkbZYjvFeoUV0NW4VOig8Alqq1d4lSsi4VwjyoSpCY2nLdt0bOHGxloI525oxkMcuVwe2TNmtJHduIiwE-wLylbDB46c-mcAykwomQeMP5xuViWPGh3WMgxzJY7qzw__);
+                      background-image: url(https://s3-alpha-sig.figma.com/img/ef06/5e30/aa6de05c259b951543d7412ab43ff724?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ljVLOJZfvbPP-I93YzNyE99ZnVzkwPRI14CGbYkPICgwrtnGqF2azAzC4hgjFhm6YCmnCINvQaSNEyIldKspzwD9pwMNe7V4ANlouy7d-oqR8o-2IURnmur7V9qQY0WFL6ipy4EQX1WGUiLwfujYLxa8p7~Vzq3xlzyR6OpccqA2inCI6o54POsoHd-YXe72eRnhmwapoqRg7gvvMQi6h2MWbnsQKyf5QLTg~u9zgLg1q6-vdNrJUc2KzI3LSaJH4kNX9KUqqTHK-2BJYlwIOhC1w5NQ1gPX3ppzH8FdYTHSSTKeySiDHRdvXoaOWi97XLwvI7J5Ao3LBb1f5lS2Ww__);
                     "
                   ></div>
                   <div
-                    class="text text-center p-4 py-xl-5 px-xl-5 d-flex align-items-center"
+                    class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
                   >
                     <div class="desc w-100">
-                      <p class="h3 mb-5">
-                        "Incredible services and amazing customer support
+                      <p class="h3 mb-3">Targeting Sales</p>
+                      <p>
+                        Setup a target for a group of sales, and you can track
+                        selling achievement in realtime in the apps.
                       </p>
                       <div class="pt-4">
-                        <p class="name mb-0">&mdash; John Doe</p>
-                        <span class="position">Project Manager</span>
+                        <!-- <p class="name mb-0">&mdash; John Doe</p>
+                        <span class="position">Project Manager</span> -->
                       </div>
                     </div>
                   </div>
@@ -154,28 +134,33 @@
               </div>
             </div>
           </div>
+
+
+          <!-- <div class="owl-nav">
+            <button type="button" role="presentation" class="owl-prev">
+              <p>
+                <small>Prev</small
+                ><span class="ion-ios-arrow-round-back"></span>
+              </p></button
+            ><button type="button" role="presentation" class="owl-next">
+              <p>
+                <small>Next</small
+                ><span class="ion-ios-arrow-round-forward"></span>
+              </p>
+            </button>
+          </div> -->
+
+
         </div>
       </div>
     </div>
-
-    <div class="owl-nav">
-      <button type="button" role="presentation" class="owl-prev">
-        <p>
-          <small></small><span class="ion-ios-arrow-round-back"></span>
-        </p></button
-      ><button type="button" role="presentation" class="owl-next">
-        <p>
-          <small></small><span class="ion-ios-arrow-round-forward"></span>
-        </p>
-      </button>
     </div>
-
-
+  </section>
 
   </body>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/owl-corousel.js"></script>
 </html>
