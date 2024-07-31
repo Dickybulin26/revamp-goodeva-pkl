@@ -42,146 +42,246 @@
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet" />
-
-    <!-- owl corousel -->
-    <!-- <link rel="stylesheet" href="../assets/css/owl-corousel.css">
-    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../assets/css/animate.css"> -->
-
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-
     <style>
-      #salestrace-benifit {
-        /* background-color: #fff; */
-        background-color: rgba(21, 25, 28, 1);
-
-        /* padding-top: 5rem;
-  padding-bottom: 10rem; */
-        margin-bottom: 1rem;
+      #banner-detail-product {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
       }
 
-      #salestrace-benifit img {
+      #banner-detail-product .card {
         width: 100%;
-        height: 100vh;
-        background-size: cover;
-        position: relative;
-        padding: 0;
-        color: #fff;
+        height: auto !important;
+        border-radius: 26px;
+      }
+
+      #banner-detail-product .card .card-img {
+        width: 100%;
+        height: 375px;
         object-fit: cover;
+        border-radius: 26px;
       }
 
-      #salestrace-benifit .bg-salestrace-benifit {
-        width: 100%;
-        /* padding-bottom: 70px; */
+      #banner-detail-product .card-body {
+        padding-top: 2rem;
+        background-color: #00000076;
+        border-radius: 26px;
+        padding-left: 3rem;
+      }
+
+      #banner-detail-product .card-body .card-logo {
+        width: 12rem;
         height: auto;
       }
 
-      #salestrace-benifit .container {
-        z-index: 2;
-        position: absolute;
-        top: 50%;
-        /* top: 8px; */
-        left: 50%;
-        transform: translate(0%, -50%);
-        margin-left: 2rem;
-      }
-
-      #salestrace-benifit h1 {
-        margin: 0 0 29px;
-        font-size: 58px;
+      #banner-detail-product .card-body .card-title {
+        font-family: "Inter", sans-serif;
+        padding-top: 3rem;
+        font-size: 46.98px;
         font-weight: 600;
-        line-height: 64px;
-        color: #fff;
-        letter-spacing: 3px;
-        word-wrap: break-word;
+        line-height: 61.08px;
+        letter-spacing: -0.03em;
+        text-align: left;
       }
 
-      #salestrace-benifit .company-name {
-        font-size: 18px;
-        font-weight: 1;
-        letter-spacing: 3px;
-        color: #fff;
+      #banner-detail-product .card-body .card-text {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-wrap: break-word;
       }
 
-      #salestrace-benifit h2 {
-        color: #fff;
-        margin-bottom: 30px;
-        font-size: 19px;
-      }
+      #banner-detail-product .card-body .btn-see-more {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        text-align: left;
 
-      #salestrace-benifit .benifit-nav {
-        display: flex !important;
-        /* justify-content: center; */
-        align-items: center !important;
-      }
-
-      #salestrace-benifit .corousel-nav {
-        display: flex !important;
-        padding: 16px 32px;
+        display: inline-block;
+        padding: 12px 45px;
         border-radius: 30px;
         transition: ease-in-out 0.3s;
         color: #fff;
-        /* background: #26a7b5; */
-        /* text-transform: uppercase; */
-        border: #fff 1px solid;
-        text-align: center;
-        align-items: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 2rem;
+        background: transparent;
+        border: 2px solid #fff;
       }
 
-      #salestrace-benifit .corousel-nav:hover {
+      #banner-detail-product .card-body .btn-see-more:hover {
         background: #fff;
         color: #000;
       }
 
-      #salestrace-benifit .corousel-nav span {
-        font-size: 20px;
-        text-align: center;
-        /* padding-right: 20px; */
+      #banner-detail-product .card-body .btn-see-more span {
+        padding-right: 20px;
       }
 
-      #salestrace-benifit .benifit-nav p {
+      #banner-detail-product .benifit-nav {
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      #banner-detail-product .corousel-nav {
+        display: flex !important;
+        padding: 10px 32px;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        color: #fff;
+        border: #fff 1px solid;
+        text-align: center;
+        align-items: center;
+        margin-top: 8rem;
+      }
+
+      #banner-detail-product .corousel-nav:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      #banner-detail-product .corousel-nav span {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #banner-detail-product .benifit-nav p {
         margin-top: auto;
         margin-right: 1rem;
         margin-left: 1rem;
+        color: #9c9c9c;
       }
 
-      #salestrace-benifit .benifit-nav p u {
+      #banner-detail-product .benifit-nav p u {
+        color: #fff;
+      }
+    </style>
+
+    <!-- <style>
+      #goodeva-carousel {
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+      }
+
+      #goodeva-carousel .carousel {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+      }
+
+      #goodeva-carousel .carousel-inner .carousel-item .carousel-img {
+        width: 100%;
+        height: 614px;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+
+      #goodeva-carousel .carousel-item .carousel-caption {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        color: white !important;
+        text-align: left;
+        background-color: #00000076;
+        border-radius: 1rem;
+      }
+
+      #goodeva-carousel .carousel-item .carousel-caption .carousel-logo {
+        width: 10rem;
+        height: auto;
+      }
+      
+
+      #goodeva-carousel .carousel-item .carousel-caption .carousel-title {
+        padding-top: 7rem;
+        font-family: "Inter", sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 65px;
+        letter-spacing: -0.03em;
+        text-align: left;
+      }
+
+      #goodeva-carousel .carousel-item .carousel-caption .carousel-text {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+        text-align: left;
+      }
+
+      #goodeva-carousel .carousel-item .carousel-caption .btn-see-more {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
+        display: inline-block;
+        padding: 12px 45px;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        color: #fff;
+        background: transparent;
+        border: 2px solid #fff;
+      }
+
+
+      #goodeva-carousel .carousel-item .carousel-caption .btn-see-more:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      #goodeva-carousel .carousel-item .carousel-caption .btn-see-more span {
+        padding-right: 20px;
+      }
+
+      #goodeva-carousel .benifit-nav {
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      #goodeva-carousel .corousel-nav {
+        display: flex !important;
+        padding: 10px 32px;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        color: #fff;
+        border: #fff 1px solid;
+        text-align: center;
+        align-items: center;
+        margin-top: 8rem;
+      }
+
+      #goodeva-carousel .corousel-nav:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      #goodeva-carousel .corousel-nav span {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #goodeva-carousel .benifit-nav p {
+        margin-top: auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        color: #9c9c9c;
+      }
+
+      #goodeva-carousel .benifit-nav p u {
         color: #fff;
       }
 
-      #salestrace-benifit .text-salestrace-benifit {
-        right: 0;
-        display: flex;
-        padding-left: 40rem;
-      }
 
-      @media (max-width: 992px) {
-        #salestrace-benifit {
-          height: calc(100vh - 70px);
-        }
-      }
-
-      @media (max-width: 768px) {
-        #salestrace-benifit h1 {
-          font-size: 30px;
-          line-height: 36px;
-        }
-
-        #salestrace-benifit h2 {
-          font-size: 18px;
-          line-height: 24px;
-          margin-bottom: 30px;
-        }
-      }
-    </style>
+    </style> -->
   </head>
   <body>
     <!-- ======= Header ======= -->
@@ -286,232 +386,347 @@
     <!-- End Header -->
 
     <main id="main">
-      <!-- ====== benifit section ======= -->
-      <!-- <section id="salestrace-benifit" class="salestrace-benifit"> -->
-      <!-- <div class="container"> -->
-      <!-- <div class="row">
-            <div class="col-md-12">
-              <div class="featured-carousel owl-carousel">
-                <div class="item">
-                  <div class="row justify-content-center">
-                    <div class="col-md-11">
-                      <div class="testimony-wrap d-md-flex">
-                        <div
-                          class="img"
-                          style="
-                            background-image: url(https://s3-alpha-sig.figma.com/img/6db0/cbc8/8b9e4ff24413666c0c483ac9a7c0e6d4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c8zjTI~-lpXpJtvuYIqfrWUBcG9MnLWm6B2oeJJmK2Xkmmzls~TOjjT5r0MGGEZRR63rBPmBZvHjtmopAov8BzNxZNxLZReaTmy79AXFvm1u21Ku-nQiPLvv~dY33PgCCB4PKxLmPL6bjuNaWQcPTI9dqaawF8NoknlupBFi8TlCtM186GAgSwqQpnu0DNTNkAWe7yxumvloTo6NgPZyFFUiivDR~QllSvTS4V0hocMyfS6ychyTKvKninLKHA5PkFYcdUpCZI2KcbGymnuDlJBXd1mdJ4ax2B~npEqpQvFjdPQrI1yJzl0vlSqIFiUnNjIScm03yK7dIMtYBX0kJA__);
-                          "
-                        ></div>
-                        <div
-                          class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
-                        >
-                          <div class="desc w-100">
-                            <p class="h3 mb-3">Targeting Sales</p>
-                            <p>
-                              Setup a target for a group of sales, and you can track
-                              selling achievement in realtime in the apps.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row justify-content-center">
-                    <div class="col-md-11">
-                      <div class="testimony-wrap d-md-flex">
-                        <div
-                          class="img"
-                          style="
-                            background-image: url(https://s3-alpha-sig.figma.com/img/bda9/002a/0129aa25db1acd834b49c8ac8037056d?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7K2rmQF0BdWP68bEMZLFA8Bs69cwA0fllIZDmCDkkWwMrap93XvNDHqsBM2MtAHDqmWE~-DbPypfjOX6IDFQuGN~ngfRUYcrXQ4hBIw5t8wg8H7EmHaMkD7GUeQbDddlc8Wk1SNKGvZrYgr~rIoB50W-NYoPCblpezTQOdMl90gpVvmxSxoQL3Eo0gabVwDSJGGL0UW~jB2Vx5H2EwlG0ZDoLfnAnu4T22NxF3NWwdaJK7zo-UhZxbed0HJTpSdWF9AY9lttOOFKukOQkGjz-Lcjm7K0CdZHM-vx1TmzRXMGSAMFTsvuPfGPyhsvCmS6HTDWfJfBdOrQGMv5vyzJA__);
-                          "
-                        ></div>
-                        <div
-                          class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
-                        >
-                          <div class="desc w-100">
-                            <p class="h3 mb-3">ayam gorreng</p>
-                            <p>
-                              Setup a target for a group of sales, and you can track
-                              selling achievement in realtime in the apps.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="row justify-content-center">
-                    <div class="col-md-11">
-                      <div class="testimony-wrap d-md-flex">
-                        <div
-                          class="img"
-                          style="
-                            background-image: url(https://s3-alpha-sig.figma.com/img/ef06/5e30/aa6de05c259b951543d7412ab43ff724?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ljVLOJZfvbPP-I93YzNyE99ZnVzkwPRI14CGbYkPICgwrtnGqF2azAzC4hgjFhm6YCmnCINvQaSNEyIldKspzwD9pwMNe7V4ANlouy7d-oqR8o-2IURnmur7V9qQY0WFL6ipy4EQX1WGUiLwfujYLxa8p7~Vzq3xlzyR6OpccqA2inCI6o54POsoHd-YXe72eRnhmwapoqRg7gvvMQi6h2MWbnsQKyf5QLTg~u9zgLg1q6-vdNrJUc2KzI3LSaJH4kNX9KUqqTHK-2BJYlwIOhC1w5NQ1gPX3ppzH8FdYTHSSTKeySiDHRdvXoaOWi97XLwvI7J5Ao3LBb1f5lS2Ww__);
-                          "
-                        ></div>
-                        <div
-                          class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
-                        >
-                          <div class="desc w-100">
-                            <p class="h3 mb-3">Targeting Sales</p>
-                            <p>
-                              Setup a target for a group of sales, and you can track
-                              selling achievement in realtime in the apps.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
+      <!-- ======= banner section ======= -->
 
-              </div>
-            </div>
-          </div> -->
-
-      <!-- </div>
-      </section> -->
-
-      <!-- ======= benefit section ======= -->
-      <section
-        id="salestrace-benifit"
-        class="d-flex flex-column justify-content-center align-items-center"
-      >
-        <div class="bg-salestrace-benifit">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="col-lg-6 col-sm-10">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/9411/de85/0513ff19575410cdb5bd8825a5399b60?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XxeJpHRK9kppD7FvvEXToLcsF~itEri5mzb6hFUe-pbIARZHeCvfAKbDa3SiSsasPgxh5IkfeVZt8UkVyDasq9hbjFSHHYIIOiIsO8qg9q66jDFV78EldU~K4I6iqYqTnPrHv03aLWRMNwAjWwpprIht4eR5z9xTQ6NKCm1sObFMJ3hw1ATXemR9Y7XzfQekaJqn0Vn-EYGs4aTIoD0dA8ql4MswbRu647J5S~u~EX3aTdAupS5I93lBYx50tNARxe-p7M~ft4mEYF1r2daHjyYY2pfAybLgpvi00~xPMI3jwT9v3539gLAdaBKBc~yVC6detVwWc6ATFNMjgdpM8Q__"
-                    class="d-block"
-                    alt=""
-                  />
-                </div>
-                <div class="col-lg-10 col-sm-10 text-salestrace-benifit">
-                  <div
-                    class="corusel-caption container text-start text-md-right justify-content-right w-50"
-                  >
-                    <h1>Targeting Sales</h1>
-                    <h2>
-                      Setup a target for a group of sales, and you can <br />
-                      track selling achievement in realtime in the apps.
-                    </h2>
-
-                    <div class="benifit-nav">
-                      <a
-                        href="#"
-                        class="corousel-nav scrollto"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev"
-                      >
-                        <span><i class="bi bi-arrow-left"></i></span>
-                      </a>
-
-                      <p><u>01</u>/03</p>
-
-                      <a
-                        href="#"
-                        class="corousel-nav scrollto"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next"
-                      >
-                        <span><i class="bi bi-arrow-right"></i></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col-lg-6 col-sm-10">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/6db0/cbc8/8b9e4ff24413666c0c483ac9a7c0e6d4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c8zjTI~-lpXpJtvuYIqfrWUBcG9MnLWm6B2oeJJmK2Xkmmzls~TOjjT5r0MGGEZRR63rBPmBZvHjtmopAov8BzNxZNxLZReaTmy79AXFvm1u21Ku-nQiPLvv~dY33PgCCB4PKxLmPL6bjuNaWQcPTI9dqaawF8NoknlupBFi8TlCtM186GAgSwqQpnu0DNTNkAWe7yxumvloTo6NgPZyFFUiivDR~QllSvTS4V0hocMyfS6ychyTKvKninLKHA5PkFYcdUpCZI2KcbGymnuDlJBXd1mdJ4ax2B~npEqpQvFjdPQrI1yJzl0vlSqIFiUnNjIScm03yK7dIMtYBX0kJA__"
-                    class="d-block"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="corusel-caption container text-start text-md-right justify-content-right w-50"
-                >
-                  <span class="company-name">Goodeva Technology</span>
-                  <h1>Targeting Sales</h1>
-                  <h2>
-                    Setup a target for a group of sales, and you can <br />
-                    track selling achievement in realtime in the apps.
-                  </h2>
-                  <div class="benifit-nav">
-                    <a
-                      href="#"
-                      class="corousel-nav scrollto"
-                      data-bs-target="#carouselExampleCaptions"
-                      data-bs-slide="prev"
-                    >
-                      <span><i class="bi bi-arrow-left"></i></span>
-                    </a>
-
-                    <p><u>02</u>/03</p>
-
-                    <a
-                      href="#"
-                      class="corousel-nav scrollto"
-                      data-bs-target="#carouselExampleCaptions"
-                      data-bs-slide="next"
-                    >
-                      <span><i class="bi bi-arrow-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col-lg-6 col-sm-10">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/4021/b6e6/ff52b6e30f98b622690a0ab0e91121ce?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mnnm5iy5vQcneYbaojEwZLTXpjRM7PMpil4fBu1fWaHB1QBy7hwb9HWZFhPLFzLH-agvzBu3Q9V9nnuxyGwMvUNza-Mib0Qdx8pQU4SUu4ZuSV6H1CLi1oHyGjfJ7x0rDzbCTtLyg~sMAdj-1qe6sB0i7k4q43YI9-MYPi2~ROkkppG6kKQSldVk3GA-j0UFV7N9Qk57ASuf8VHZ~RDzE32WOREGX4-pE0oIXWlwlsZoGNV8ZkNAHW3Mrs-3~uLnniZyf5N-O1CPYz4kDVAeMxS8NtrC79uUNSyQFCmT9oo5~fAf3vsjdD4lgQzc1W7It3PmExsLykKl05XiMPFT-w__"
-                    class="d-block"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="corusel-caption container text-start text-md-right justify-content-right w-50"
-                >
-                  <span class="company-name">Goodeva Technology</span>
-                  <h1>Targeting Sales</h1>
-                  <h2>
-                    Setup a target for a group of sales, and you can <br />
-                    track selling achievement in realtime in the apps.
-                  </h2>
-
-                  <div class="benifit-nav">
-                    <a
-                      href="#"
-                      class="corousel-nav scrollto"
-                      data-bs-target="#carouselExampleCaptions"
-                      data-bs-slide="prev"
-                    >
-                      <span><i class="bi bi-arrow-left"></i></span>
-                    </a>
-
-                    <p><u>03</u>/03</p>
-
-                    <a
-                      href="#"
-                      class="corousel-nav scrollto"
-                      data-bs-target="#carouselExampleCaptions"
-                      data-bs-slide="next"
-                    >
-                      <span><i class="bi bi-arrow-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <section id="banner-detail-product" class="banner-detail-product">
+        <div class="container">
+          <div class="card bg-dark text-white">
+            <img
+              src="../assets/img/news/b20-indonesia.png"
+              class="card-img"
+              alt=""
+            />
+            <div class="card-img-overlay card-body">
+              <img
+                src="../assets/img/news/logo-b20.png"
+                alt=""
+                class="card-logo"
+              />
+              <h2 class="card-title">B20 Council Platform</h2>
+              <p class="card-text">
+                The B20 is an international business forum composed of
+                representatives <br> from the G20 business community, serving as a
+                platform for dialogue <br> between global business leaders
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Hero -->
+
+      <!-- <section id="goodeva-carousel" class="goodeva-carousel">
+        <div class="container">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/assets/img/goodeva-enterprise/goodeva-corousel1.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/goodeva-enterprise/mandiri-logo.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>01</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img
+                  src="/assets/img/news/asean.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/news/asean-goodeva.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>02</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img
+                  src="/assets/img/news/b20-indonesia.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/goodeva-enterprise/mandiri-logo.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>03</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img
+                  src="/assets/img/news/lkpp.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/news/Logo_LKPP 1.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>04</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img
+                  src="/assets/img/news/pertanian.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/news/logo-pertanian.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>05</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img
+                  src="/assets/img/news/vaccination.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/goodeva-enterprise/mandiri-logo.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>06</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img
+                  src="/assets/img/news/undp.png"
+                  class="d-block carousel-img"
+                  alt=""
+                />
+                <div class="carousel-caption">
+                  <img
+                    src="../assets/img/goodeva-enterprise/mandiri-logo.png"
+                    alt=""
+                    class="carousel-logo"
+                  />
+                  <h2 class="carousel-title">Bank Mandiri</h2>
+                  <p class="carousel-text">
+                    Use of SDWAN connectivity network for 4000 Bank <br />
+                    branches in Indonesia
+                  </p>
+                  <a href="#" class="btn-see-more scrollto">
+                    <span>See More </span><i class="bi bi-arrow-right"></i
+                  ></a>
+                  <div class="benifit-nav">
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>07</u>/07</p>
+
+                    <a
+                      href="#"
+                      class="corousel-nav scrollto"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section> -->
     </main>
 
     <!-- ======= Footer ======= -->
@@ -519,28 +734,16 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <img
-                src="https://goodeva.co.id/public/img/assets/Goodeva-technology-logo.png"
-                alt="logo"
-                width="135"
-              />
+            <div class="col-lg-2 col-md-6 footer-contact">
+              <img src="/assets/img/goodeva-logo.png" alt="logo" width="135" />
               <div class="copyright mt-3">
                 &copy; Copyright 2024 Goodeva Technology <br />
                 All right reserved.
               </div>
-              <p class="pt-3 fw-bold">Goodeva part of :</p>
+              <p class="pt-3">Goodeva Bagian Dari :</p>
               <div class="credits pt-3">
-                <img
-                  src="https://goodeva.co.id/public/img/assets/home/astra-startup.png"
-                  alt="logo"
-                  width="50"
-                />
-                <img
-                  src="https://goodeva.co.id/public/img/assets/home/Logo-Astra-Startup-Community-default.png"
-                  alt="logo"
-                  width="125"
-                />
+                <img src="/assets/img/footer-img1.png" alt="logo" width="50" />
+                <img src="/assets/img/footer-img2.png" alt="logo" width="125" />
               </div>
             </div>
 
@@ -569,7 +772,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
+            <div class="col-lg-2 col-md-6 footer-links">
               <h4 class="footer-title">Bekasi Office 1</h4>
               <p>
                 GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota
@@ -582,7 +785,7 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-newsletter">
+            <div class="col-lg-2 col-md-6 footer-newsletter">
               <h4 class="footer-title">Office Phone</h4>
               <p>
                 (021) 8273-8692 <br />

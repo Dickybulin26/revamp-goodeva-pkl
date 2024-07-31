@@ -842,31 +842,6 @@ h6 {
   background-color: #f1f5f9;
 }
 
-#news-section .nav-underline {
-  border: none;
-  display: flex;
-  justify-content: center;
-  z-index: 3 !important;
-  position: relative;
-  gap: 4.3rem;
-}
-
-#news-section .nav-link {
-  border: none;
-  color: #6c757d;
-  font-weight: bold;
-}
-
-#news-section .nav-link:hover {
-  border-bottom: 2px solid #26a7b5;
-  color: #1d1d1d;
-}
-
-#news-section .nav-link.active {
-  border-bottom: 2px solid #26a7b5;
-  color: #1d1d1d;
-}
-
 #news-section .card-deck {
   margin-top: 3rem;
   display: flex;
@@ -879,6 +854,7 @@ h6 {
 #news-section .card {
   width: 25rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 #news-section .card .card-img-top {
@@ -919,6 +895,45 @@ h6 {
 
 #news-section .card-title.lkpp {
   padding-top: 7.3rem;
+}
+
+#news-section .card-deck .card p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: left;
+  color: #fff;
+}
+
+#news-section .nav-underline {
+  border: none;
+  display: flex;
+  justify-content: center;
+  z-index: 3 !important;
+  position: relative;
+  gap: 10rem;
+}
+
+#news-section .nav-link {
+  border: none;
+  color: #959595;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#news-section .nav-link:hover {
+  border-bottom: 2px solid #26a7b5;
+  color: #1d1d1d;
+}
+
+#news-section .nav-link.active {
+  border-bottom: 2px solid #26a7b5;
+  color: #1d1d1d;
 }
 
 /*--------------------------------------------------------------
@@ -1362,12 +1377,11 @@ h6 {
 }
 
 #footer .footer-top h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24.2px;
   text-align: left;
-
 }
 
 #footer .footer-top .footer-links {
@@ -1483,7 +1497,6 @@ h6 {
 #footer .row .footer-title {
   color: #143477;
 }
-
 
 /*? Halaman product salestreace */
 
@@ -2631,11 +2644,13 @@ h6 {
   height: auto;
 }
 
-#region-section .row {
+#region-section .location {
   gap: 3.4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-#region-section .row .increas-list ul {
+#region-section .location .increas-list ul {
   list-style-type: none;
   padding-left: 0;
   color: #737373;
@@ -2643,11 +2658,11 @@ h6 {
   margin-bottom: 2rem;
 }
 
-#region-section .row .increas-list ul li {
+#region-section .location .increas-list ul li {
   padding-top: 1rem;
 }
 
-#region-section .row .increas-list ul li img {
+#region-section .location .increas-list ul li img {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: auto;
@@ -3049,6 +3064,7 @@ h6 {
 #goodeva-news-section .card {
   width: 25rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 #goodeva-news-section .card .card-img-top {
@@ -3130,4 +3146,310 @@ h6 {
 
 #goodeva-news-section .card-title.pertanian {
   padding-top: 7.3rem;
+}
+
+/** goodeva carousel  */
+
+#goodeva-carousel {
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+#goodeva-carousel .carousel {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#goodeva-carousel .carousel-inner .carousel-item .carousel-img {
+  width: 100%;
+  height: 614px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  color: white !important;
+  text-align: left;
+  background-color: #00000076;
+  border-radius: 1rem;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .carousel-logo {
+  width: 10rem;
+  height: auto;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .carousel-title {
+  padding-top: 7rem;
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .carousel-text {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .btn-see-more {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .btn-see-more:hover {
+  background: #fff;
+  color: #000;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .btn-see-more span {
+  padding-right: 20px;
+}
+
+#goodeva-carousel .benifit-nav {
+  display: flex !important;
+  align-items: center !important;
+}
+
+#goodeva-carousel .corousel-nav {
+  display: flex !important;
+  padding: 10px 32px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  border: #fff 1px solid;
+  text-align: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+#goodeva-carousel .corousel-nav:hover {
+  background: #fff;
+  color: #000;
+}
+
+#goodeva-carousel .corousel-nav span {
+  font-size: 20px;
+  text-align: center;
+}
+
+#goodeva-carousel .benifit-nav p {
+  margin-top: auto;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #9c9c9c;
+}
+
+#goodeva-carousel .benifit-nav p u {
+  color: #fff;
+}
+
+/*? halaman detail-product */
+
+/** banner section */
+
+#banner-detail-product {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#banner-detail-product .card {
+  width: 100%;
+  height: auto !important;
+  border-radius: 26px;
+}
+
+#banner-detail-product .card .card-img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 26px;
+}
+
+#banner-detail-product .card-body {
+  padding-top: 2rem;
+  background-color: #00000076;
+  border-radius: 26px;
+  padding-left: 3rem;
+}
+
+#banner-detail-product .card-body .card-logo {
+  width: 12rem;
+  height: auto;
+}
+
+#banner-detail-product .card-body .card-title {
+  font-family: "Inter", sans-serif;
+  padding-top: 3rem;
+  font-size: 46.98px;
+  font-weight: 600;
+  line-height: 61.08px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+#banner-detail-product .card-body .card-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  text-wrap: break-word;
+}
+
+#banner-detail-product .card-body .btn-see-more {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+#banner-detail-product .card-body .btn-see-more:hover {
+  background: #fff;
+  color: #000;
+}
+
+#banner-detail-product .card-body .btn-see-more span {
+  padding-right: 20px;
+}
+
+#banner-detail-product .benifit-nav {
+  display: flex !important;
+  align-items: center !important;
+}
+
+#banner-detail-product .corousel-nav {
+  display: flex !important;
+  padding: 10px 32px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  border: #fff 1px solid;
+  text-align: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+#banner-detail-product .corousel-nav:hover {
+  background: #fff;
+  color: #000;
+}
+
+#banner-detail-product .corousel-nav span {
+  font-size: 20px;
+  text-align: center;
+}
+
+#banner-detail-product .benifit-nav p {
+  margin-top: auto;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #9c9c9c;
+}
+
+#banner-detail-product .benifit-nav p u {
+  color: #fff;
+}
+
+#main hr {
+  width: 93%;
+  height: 2px;
+  border-width: 0;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 0;
+  color: gray !important;
+  background-color: gray !important;
+}
+
+/** product detail improve */
+
+#product-detail-improve {
+  background-image: url(https://s3-alpha-sig.figma.com/img/473c/856a/8e2b0fce274b15382e861f9c82e3987d?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mbt11WZRsLy-HDafKtZVj3Uzhg1KHx0SujJs6nK3hRJbHjcVa5bp837Xgx175bsKtZRQgq4gKOlh-I72fwSSWbcX7kQPn~8~3nIDSAt~ZNCRwhQmenpmyiRVrpcafssxOdTtNUMPQiJvyRVW01pIF1Ba4K5oQUjzSlhqL4wzzPndIrbrdsZ5-IlRJqWeJT07goDEo1VoWUOXCsRU-YsNzwDJsdZudqmCrZkl1DCnT1YGpqW~Se~hwrWVIKov5vSX4dHhTovWGjB~YDVasomwGXhLGt1z9vTb~RxCjcD0xLGmqxh5tNg0IF2UaT-bL0MF0Gpb01IA4C20pJCOovuZFg__);
+  box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
+}
+
+#product-detail-improve .text-product {
+  padding-top: 2rem;
+}
+
+#product-detail-improve h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: left;
+
+  color: #fff;
+}
+
+#product-detail-improve .product-img {
+  width: 25%;
+  object-fit: contain;
+  position: absolute;
+  transform: translate(6.5rem, -27%);
+}
+
+#product-detail-improve .btn-product-detail-improve {
+  color: #1d1d11;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1),
+    rgba(36, 159, 172, 1)
+  );
+  background-size: 300% auto;
+  transition: 0.5s;
+}
+
+#product-detail-improve .btn-product-detail-improve:hover {
+  background-position: 100% 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
