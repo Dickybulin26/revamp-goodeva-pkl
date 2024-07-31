@@ -1357,16 +1357,17 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #1d1d11;
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #1d1d11;
-  position: relative;
-  padding-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: left;
+
 }
 
 #footer .footer-top .footer-links {
@@ -1410,14 +1411,6 @@ h6 {
 
 #footer .footer-newsletter {
   font-size: 15px;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #1d1d11;
-  position: relative;
-  padding-bottom: 12px;
 }
 
 #footer .footer-newsletter form {
@@ -1482,6 +1475,15 @@ h6 {
   color: #fff;
   text-decoration: none;
 }
+
+#footer .row {
+  gap: 9rem;
+}
+
+#footer .row .footer-title {
+  color: #143477;
+}
+
 
 /*? Halaman product salestreace */
 
@@ -1567,27 +1569,36 @@ h6 {
 
 /** valued client section */
 
-.valued-client {
+#salestrace-valued-client {
   background-color: #f1f5f9;
 }
 
-.valued-client .title-valued-client h2 {
-  font-weight: bold;
+#salestrace-valued-client .title-valued-client h2 {
   color: #1d1d11;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48.41px;
+  text-align: center;
 }
 
-.valued-client .title-valued-client p {
+#salestrace-valued-client .title-valued-client p {
   color: #7a7a7a;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.63px;
+  text-align: center;
 }
 
-.valued-client .row #odeva {
+#salestrace-valued-client .row #odeva {
   width: 120%;
   height: auto;
   object-fit: contain;
 }
 
 @media (max-width: 768px) {
-  .valued-client .row img {
+  #salestrace-valued-client .row img {
     padding: 5px 10px;
     width: 100%;
     height: auto;
@@ -2412,7 +2423,6 @@ h6 {
 }
 
 .banner-section .title-banner h2 {
-  /* font-weight: bold; */
   color: #1d1d11;
   font-family: "Inter", sans-serif;
   font-size: 40px;
@@ -2423,7 +2433,7 @@ h6 {
 }
 
 .banner-section .title-banner p {
-  color: #878C91;
+  color: #878c91;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
@@ -2444,12 +2454,21 @@ h6 {
 }
 
 #smartsafety-valued-client .title-valued-client h2 {
-  font-weight: bold;
   color: #1d1d11;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48.41px;
+  text-align: center;
 }
 
 #smartsafety-valued-client .title-valued-client p {
   color: #7a7a7a;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.63px;
+  text-align: center;
 }
 
 #smartsafety-valued-client .row {
@@ -2587,7 +2606,6 @@ h6 {
 
 #region-section {
   background-color: #f1f5f9;
-  /* margin-bottom: 2rem; */
 }
 
 #region-section .title-banner h2 {
@@ -2601,7 +2619,6 @@ h6 {
 }
 
 #region-section .title-banner p {
-  /* font-family: Plus Jakarta Sans; */
   font-size: 22px;
   font-weight: 400;
   line-height: 37.5px;
@@ -2612,7 +2629,6 @@ h6 {
 #region-section img {
   width: 100%;
   height: auto;
-  /* margin-bottom: 2rem; */
 }
 
 #region-section .row {
@@ -2635,4 +2651,483 @@ h6 {
   margin-right: 0.5rem;
   width: 1.5rem;
   height: auto;
+}
+
+/** card service section  */
+
+#smartsafety-card-service {
+  background-color: #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+#smartsafety-card-service .title-service h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #000;
+}
+
+#smartsafety-card-service .title-service p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  margin-top: 1rem;
+}
+
+#smartsafety-card-service .card-deck {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+#smartsafety-card-service .card {
+  width: 20rem;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+}
+
+#smartsafety-card-service .card:hover {
+  transform: scale(1.1);
+}
+
+#smartsafety-card-service .card .card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#smartsafety-card-service .card-body {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: #111c25;
+  font-size: 12px;
+  top: 0;
+  border-radius: 1rem;
+}
+
+#smartsafety-card-service .card-deck .card-logo {
+  max-width: 4rem;
+  padding-top: 3rem;
+}
+
+#smartsafety-card-service .card-deck .card-logo.b20 {
+  width: 5rem;
+}
+
+#smartsafety-card-service .card-title {
+  padding-top: 1rem;
+
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+#smartsafety-card-service .card-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+/*?  halaman goodeva interprise  */
+
+/** goodeva-hero  */
+
+#goodeva-hero {
+  background-color: #fff;
+  padding-top: 5rem;
+}
+
+#goodeva-hero .text-container {
+  padding-top: 10rem;
+  top: 70%;
+  left: 70%;
+  transform: translate(1.5rem, 8%);
+}
+
+#goodeva-hero .text-product {
+  padding-top: 5rem;
+}
+
+#goodeva-hero .text-product h3 {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: left;
+}
+
+#goodeva-hero .text-product p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #878c91;
+}
+
+#goodeva-hero .product-img {
+  width: 200%;
+  height: auto !important;
+  object-fit: contain;
+}
+
+#goodeva-hero img {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+}
+
+#goodeva-hero .btn-learn-more {
+  background-color: #26a7b5;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+}
+
+#goodeva-hero .btn-learn-more:hover {
+  background-color: #4ed8e7;
+  color: #fff;
+}
+
+#goodeva-hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #26a7b5;
+}
+
+#goodeva-hero .btn-get-started:hover {
+  background: #abe1e8;
+}
+
+#goodeva-hero .btn-get-started span {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+#goodeva-hero .card-deck {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+#goodeva-hero .card {
+  width: 19rem;
+  border-radius: 0px 35px 0px 35px;
+  transition: transform 0.5s;
+}
+
+#goodeva-hero .card:hover {
+  transform: scale(1.1);
+}
+
+#goodeva-hero .card .card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 0px 35px 0px 35px;
+}
+
+#goodeva-hero .card-body {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: #020609;
+  font-size: 12px;
+  top: 0;
+  border-radius: 0px 35px 0px 35px;
+}
+
+#goodeva-hero .card-deck .card-logo {
+  max-width: 4rem;
+}
+
+#goodeva-hero .card-deck .card-logo.b20 {
+  width: 5rem;
+}
+
+#goodeva-hero .card-title {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+#goodeva-hero .card-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+/** goodeva-valued-client section */
+
+#goodeva-valued-client {
+  background-color: #fff;
+}
+
+#goodeva-valued-client .title-valued-client h2 {
+  color: #1d1d11;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72.61px;
+  text-align: center;
+}
+
+#goodeva-valued-client .title-valued-client p {
+  color: #7a7a7a;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.63px;
+  text-align: center;
+}
+
+#goodeva-valued-client .row {
+  padding-top: 2rem;
+  gap: 3rem;
+  display: flex;
+}
+
+#goodeva-valued-client .row img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#goodeva-valued-client .row #odeva {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  #goodeva-valued-client .row img {
+    padding: 5px 10px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/** goodeva finished project section  */
+
+#goodeva-finished-project {
+  background-color: #f1f5f9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#goodeva-finished-project h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #000;
+}
+
+#goodeva-finished-project p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  color: #878c91;
+}
+
+/** news-section */
+
+#goodeva-news-section {
+  background-color: #f1f5f9;
+  padding-top: 3rem;
+}
+
+#goodeva-news-section .section-title h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #1d1d11;
+}
+
+#goodeva-news-section .section-title span {
+  color: #26a7b5;
+}
+
+#goodeva-news-section .section-title p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  color: #7a7a7a;
+  margin-top: 2rem;
+}
+
+#goodeva-news-section .nav-underline {
+  border: none;
+  display: flex;
+  justify-content: center;
+  z-index: 3 !important;
+  position: relative;
+  gap: 10rem;
+}
+
+#goodeva-news-section .nav-link {
+  border: none;
+  color: #959595;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#goodeva-news-section .nav-link:hover {
+  border-bottom: 2px solid #26a7b5;
+  color: #1d1d1d;
+}
+
+#goodeva-news-section .nav-link.active {
+  border-bottom: 2px solid #26a7b5;
+  color: #1d1d1d;
+}
+
+#goodeva-news-section .card-deck {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-bottom: 1rem;
+}
+
+#goodeva-news-section .card {
+  width: 25rem;
+  border-radius: 1rem;
+}
+
+#goodeva-news-section .card .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#goodeva-news-section .card .card-img-top.undp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  object-position: 0%;
+}
+
+#goodeva-news-section .card-body {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: #02060973;
+  font-size: 12px;
+  top: 0;
+  border-radius: 1rem;
+}
+
+#goodeva-news-section .card-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: left;
+  color: #fff;
+}
+
+#goodeva-news-section .card-deck .card-logo {
+  max-width: 10rem;
+}
+
+#goodeva-news-section .card-deck .card-logo.b20 {
+  width: 8rem;
+}
+
+#goodeva-news-section .card-deck .card-logo.undp {
+  width: 5rem;
+}
+
+#goodeva-news-section .card-deck .card-logo.kadin {
+  width: 3rem;
+}
+
+#goodeva-news-section .card-deck .card-logo.pertanian {
+  width: 10rem;
+}
+
+#goodeva-news-section .card-title.asean {
+  padding-top: 7.3rem;
+}
+
+#goodeva-news-section .card-title.kadin {
+  padding-top: 7.3rem;
+}
+
+#goodeva-news-section .card-title.b20 {
+  padding-top: 5rem;
+}
+
+#goodeva-news-section .card-title.lkpp {
+  padding-top: 7.3rem;
+}
+
+#goodeva-news-section .card-title.undp {
+  padding-top: 7.3rem;
+}
+
+#goodeva-news-section .card-title.pertanian {
+  padding-top: 7.3rem;
 }
