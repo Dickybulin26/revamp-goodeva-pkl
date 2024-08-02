@@ -1,166 +1,1148 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>owl corousel</title>
-    <!-- Slick CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
-    <!-- Our CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
+    <title>Goodeva | Goodeva Technology Ai & IoT Enterprise</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+
+    <!-- Vendor CSS Files -->
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link
       href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <!-- <link
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
-    /> -->
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
-    <link rel="stylesheet" href="css/owl-corousel.css" />
+    />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-    <!-- JQuery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <style>
+      /*? halaman detail-product */
+      /** banner section */
+      @media screen and (min-width: 768px) {
+        #banner-detail-product-mobile,
+        #product-detail-content-mobile,
+        #product-detail-improve-mobile {
+          display: none;
+        }
+      }
 
+      #banner-detail-product {
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+      }
+
+      #banner-detail-product .card {
+        width: 100%;
+        height: auto !important;
+        border-radius: 26px;
+      }
+
+      #banner-detail-product .card .card-img {
+        width: 100%;
+        height: 375px;
+        object-fit: cover;
+        border-radius: 26px;
+      }
+
+      #banner-detail-product .card-body {
+        padding-top: 2rem;
+        background-color: #00000076;
+        border-radius: 26px;
+        padding-left: 3rem;
+      }
+
+      #banner-detail-product .card-body .card-logo {
+        width: 12rem;
+        height: auto;
+        margin-left: -2rem;
+      }
+
+      #banner-detail-product .card-body .card-title {
+        font-family: "Inter", sans-serif;
+        padding-top: 3rem;
+        font-size: 46.98px;
+        font-weight: 600;
+        line-height: 61.08px;
+        letter-spacing: -0.03em;
+        text-align: left;
+      }
+
+      #banner-detail-product .card-body .card-text {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-wrap: break-word;
+      }
+
+      #banner-detail-product .card-body .btn-see-more {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
+        display: inline-block;
+        padding: 12px 45px;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        color: #fff;
+        background: transparent;
+        border: 2px solid #fff;
+      }
+
+      #banner-detail-product .card-body .btn-see-more:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      #banner-detail-product .card-body .btn-see-more span {
+        padding-right: 20px;
+      }
+
+      #banner-detail-product .benifit-nav {
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      #banner-detail-product .corousel-nav {
+        display: flex !important;
+        padding: 10px 32px;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        color: #fff;
+        border: #fff 1px solid;
+        text-align: center;
+        align-items: center;
+        margin-top: 8rem;
+      }
+
+      #banner-detail-product .corousel-nav:hover {
+        background: #fff;
+        color: #000;
+      }
+
+      #banner-detail-product .corousel-nav span {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #banner-detail-product .benifit-nav p {
+        margin-top: auto;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        color: #9c9c9c;
+      }
+
+      #banner-detail-product .benifit-nav p u {
+        color: #fff;
+      }
+
+      #main hr {
+        height: 2px;
+        border-width: 0;
+        margin-right: 0;
+        color: gray !important;
+        background-color: gray !important;
+      }
+
+      /** product detail content */
+      :root {
+        --text-content-detail-product: #878c91;
+      }
+
+      #product-detail-content {
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+        color: var(--text-content-detail-product);
+        font-family: "inter", sans-serif;
+      }
+
+      #product-detail-content .side-content img {
+        width: 10rem;
+        height: auto;
+      }
+
+      #product-detail-content .client-img {
+        width: 100%;
+        height: auto;
+      }
+
+      #product-detail-content .content .content-img {
+        width: 100%;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      #product-detail-content .side-content h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+      }
+
+      #product-detail-content .content .content-title {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 45px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        color: #010205;
+      }
+
+      #product-detail-content .content h3 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+      }
+
+      #product-detail-content .content {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+      }
+
+      #product-detail-content .btn-product-detail-content {
+        color: #1d1d11;
+        border: 2px solid #878c9186;
+        border-radius: 48px;
+        padding: 1px 32px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 3 !important;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        background-color: transparent !important;
+        background-size: 300% auto;
+        transition: 0.5s;
+      }
+
+      #product-detail-content .btn-product-detail-content:hover {
+        background: linear-gradient(135deg, #373f46, #15191c);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border: none !important;
+        color: #fff;
+      }
+
+      /** product detail improve */
+
+      #product-detail-improve {
+        background-image: url(https://s3-alpha-sig.figma.com/img/473c/856a/8e2b0fce274b15382e861f9c82e3987d?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mbt11WZRsLy-HDafKtZVj3Uzhg1KHx0SujJs6nK3hRJbHjcVa5bp837Xgx175bsKtZRQgq4gKOlh-I72fwSSWbcX7kQPn~8~3nIDSAt~ZNCRwhQmenpmyiRVrpcafssxOdTtNUMPQiJvyRVW01pIF1Ba4K5oQUjzSlhqL4wzzPndIrbrdsZ5-IlRJqWeJT07goDEo1VoWUOXCsRU-YsNzwDJsdZudqmCrZkl1DCnT1YGpqW~Se~hwrWVIKov5vSX4dHhTovWGjB~YDVasomwGXhLGt1z9vTb~RxCjcD0xLGmqxh5tNg0IF2UaT-bL0MF0Gpb01IA4C20pJCOovuZFg__);
+        box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
+      }
+
+      #product-detail-improve .text-product {
+        padding-top: 2rem;
+      }
+
+      #product-detail-improve h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48.41px;
+        text-align: left;
+
+        color: #fff;
+      }
+
+      #product-detail-improve .product-img {
+        width: 25%;
+        object-fit: contain;
+        position: absolute;
+        transform: translate(6.5rem, -27%);
+      }
+
+      #product-detail-improve .btn-product-detail-improve {
+        color: #1d1d11;
+        border: none;
+        border-radius: 30px;
+        padding: 8px 40px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 3 !important;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-right: 1rem;
+
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 1),
+          rgba(36, 159, 172, 1)
+        );
+        background-size: 300% auto;
+        transition: 0.5s;
+      }
+
+      #product-detail-improve .btn-product-detail-improve:hover {
+        background-position: 100% 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /** responsive for mobile view  */
+      @media screen and (max-width: 768px) {
+        /** banner detail product */
+        #banner-detail-product .card .card-img {
+          width: 100%;
+          height: 230px;
+          object-fit: cover;
+          border-radius: 26px;
+        }
+
+        #banner-detail-product .card-body {
+          padding-top: 1rem;
+          background-color: #00000076;
+          border-radius: 26px;
+          padding-left: 1rem;
+        }
+
+        #banner-detail-product .card-body .card-logo {
+          width: 8rem;
+          height: auto;
+          margin-left: -2rem;
+        }
+
+        #banner-detail-product .card-body .card-title {
+          font-family: "Inter", sans-serif;
+          padding-top: 1rem;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 31.2px;
+          letter-spacing: -0.03em;
+          text-align: left;
+        }
+
+        #banner-detail-product .card-body .card-text {
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left;
+          text-wrap: break-word;
+        }
+      }
+
+      /** product detail content */
+      @media screen and (max-width: 768px) {
+        #product-detail-content {
+          display: none;
+        }
+
+        /** product detail content mobile */
+        :root {
+          --text-content-detail-product: #878c91;
+        }
+
+        #product-detail-content-mobile {
+          margin-top: 3rem;
+          margin-bottom: 1rem;
+          color: var(--text-content-detail-product);
+          font-family: "inter", sans-serif;
+        }
+
+        #product-detail-content-mobile .side-content img {
+          width: 10rem;
+          height: auto;
+        }
+
+        #product-detail-content-mobile .client-img {
+          width: 122px;
+          height: auto;
+        }
+
+        #product-detail-content-mobile .content .content-img {
+          width: 100%;
+          height: auto;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        #product-detail-content-mobile .side-content h4 {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 36px;
+          text-align: left;
+        }
+
+        #product-detail-content-mobile .content-title h2 {
+          font-family: "inter", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: -0.03em;
+          text-align: left;
+          color: #010205;
+        }
+
+        #product-detail-content-mobile .content h3 {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 36px;
+          text-align: left;
+        }
+
+        #product-detail-content-mobile .content {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 36px;
+          text-align: justify;
+        }
+
+        #product-detail-content-mobile .btn-paragraph {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        #product-detail-content-mobile .btn-product-detail-content-mobile {
+          color: #1d1d11;
+          border: 2px solid #878c9186;
+          border-radius: 48px;
+          padding: 8px 3rem;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 19.36px;
+          cursor: pointer;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          z-index: 3 !important;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+          margin-right: 1rem;
+          background-color: transparent !important;
+          background-size: 300% auto;
+          transition: 0.5s;
+        }
+
+        #product-detail-content-mobile
+          .btn-product-detail-content-mobile:hover {
+          background: linear-gradient(135deg, #373f46, #15191c);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          border: none !important;
+          color: #fff;
+        }
+
+        #product-detail-content-mobile .product-detail-content-footer-mobile {
+          font-family: "Inter", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+        }
+
+        #product-detail-content-mobile
+          .product-detail-content-footer-mobile
+          span {
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 37.8px;
+          text-align: left;
+        }
+      }
+
+      /** product-improve  */
+      @media screen and (max-width: 768px) {
+        #product-detail-improve {
+          display: none;
+        }
+
+        /** product detail improve mobile */
+
+        #product-detail-improve-mobile {
+          background-image: url(https://s3-alpha-sig.figma.com/img/473c/856a/8e2b0fce274b15382e861f9c82e3987d?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Mbt11WZRsLy-HDafKtZVj3Uzhg1KHx0SujJs6nK3hRJbHjcVa5bp837Xgx175bsKtZRQgq4gKOlh-I72fwSSWbcX7kQPn~8~3nIDSAt~ZNCRwhQmenpmyiRVrpcafssxOdTtNUMPQiJvyRVW01pIF1Ba4K5oQUjzSlhqL4wzzPndIrbrdsZ5-IlRJqWeJT07goDEo1VoWUOXCsRU-YsNzwDJsdZudqmCrZkl1DCnT1YGpqW~Se~hwrWVIKov5vSX4dHhTovWGjB~YDVasomwGXhLGt1z9vTb~RxCjcD0xLGmqxh5tNg0IF2UaT-bL0MF0Gpb01IA4C20pJCOovuZFg__);
+          box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
+          width: 100%;
+          height: 80vh;
+          position: relative;
+        }
+
+        #product-detail-improve-mobile .text-product {
+          padding-top: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #product-detail-improve-mobile h3 {
+          font-family: "Inter", sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 43.57px;
+          text-align: center;
+          color: #fff;
+        }
+
+        #product-detail-improve-mobile .product-img {
+          width: 80%;
+          height: auto;
+          object-fit: contain;
+          position: absolute;
+          bottom: 0;
+        }
+
+        #product-detail-improve-mobile .btn-product-detail-improve-mobile {
+          color: #1d1d11;
+          border: none;
+          border-radius: 30px;
+          padding: 8px 40px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          z-index: 3 !important;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+          margin-right: 1rem;
+
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 1),
+            rgba(36, 159, 172, 1)
+          );
+          background-size: 300% auto;
+          transition: 0.5s;
+        }
+
+        #product-detail-improve-mobile
+          .btn-product-detail-improve-mobile:hover {
+          background-position: 100% 0;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+          color: #fff;
+        }
+      }
+    </style>
   </head>
   <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <div class="logo me-auto">
+          <a href="#"
+            ><img
+              src="https://goodeva.co.id/public/img/assets/Goodeva-technology-logo.png"
+              alt="logo-nav"
+              class="img-fluid"
+          /></a>
+        </div>
 
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="featured-carousel owl-carousel">
-          <div class="item">
-            <div class="row justify-content-center">
-              <div class="col-md-11">
-                <div class="testimony-wrap d-md-flex">
-                  <div
-                    class="img"
-                    style="
-                      background-image: url(https://s3-alpha-sig.figma.com/img/6db0/cbc8/8b9e4ff24413666c0c483ac9a7c0e6d4?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c8zjTI~-lpXpJtvuYIqfrWUBcG9MnLWm6B2oeJJmK2Xkmmzls~TOjjT5r0MGGEZRR63rBPmBZvHjtmopAov8BzNxZNxLZReaTmy79AXFvm1u21Ku-nQiPLvv~dY33PgCCB4PKxLmPL6bjuNaWQcPTI9dqaawF8NoknlupBFi8TlCtM186GAgSwqQpnu0DNTNkAWe7yxumvloTo6NgPZyFFUiivDR~QllSvTS4V0hocMyfS6ychyTKvKninLKHA5PkFYcdUpCZI2KcbGymnuDlJBXd1mdJ4ax2B~npEqpQvFjdPQrI1yJzl0vlSqIFiUnNjIScm03yK7dIMtYBX0kJA__);
-                    "
-                  ></div>
-                  <div
-                    class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
-                  >
-                    <div class="desc w-100">
-                      <p class="h3 mb-3">Targeting Sales</p>
-                      <p>
-                        Setup a target for a group of sales, and you can track
-                        selling achievement in realtime in the apps.
-                      </p>
-                      <div class="pt-4">
-                        <!-- <p class="name mb-0">&mdash; Rony Smith</p>
-                        <span class="position">Project Manager</span> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row justify-content-center">
-              <div class="col-md-11">
-                <div class="testimony-wrap d-md-flex">
-                  <div
-                    class="img"
-                    style="
-                      background-image: url(https://s3-alpha-sig.figma.com/img/bda9/002a/0129aa25db1acd834b49c8ac8037056d?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D7K2rmQF0BdWP68bEMZLFA8Bs69cwA0fllIZDmCDkkWwMrap93XvNDHqsBM2MtAHDqmWE~-DbPypfjOX6IDFQuGN~ngfRUYcrXQ4hBIw5t8wg8H7EmHaMkD7GUeQbDddlc8Wk1SNKGvZrYgr~rIoB50W-NYoPCblpezTQOdMl90gpVvmxSxoQL3Eo0gabVwDSJGGL0UW~jB2Vx5H2EwlG0ZDoLfnAnu4T22NxF3NWwdaJK7zo-UhZxbed0HJTpSdWF9AY9lttOOFKukOQkGjz-Lcjm7K0CdZHM-vx1TmzRXMGSAMFTsvuPfGPyhsvCmS6HTDWfJfBdOrQGMv5vyzJA__);
-                    "
-                  ></div>
-                  <div
-                    class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
-                  >
-                    <div class="desc w-100">
-                      <p class="h3 mb-3">ayam gorreng</p>
-                      <p>
-                        Setup a target for a group of sales, and you can track
-                        selling achievement in realtime in the apps.
-                      </p>
-                      <div class="pt-4">
-                        <!-- <p class="name mb-0">&mdash; Rony Smith</p>
-                        <span class="position">Project Manager</span> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="row justify-content-center">
-              <div class="col-md-11">
-                <div class="testimony-wrap d-md-flex">
-                  <div
-                    class="img"
-                    style="
-                      background-image: url(https://s3-alpha-sig.figma.com/img/ef06/5e30/aa6de05c259b951543d7412ab43ff724?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ljVLOJZfvbPP-I93YzNyE99ZnVzkwPRI14CGbYkPICgwrtnGqF2azAzC4hgjFhm6YCmnCINvQaSNEyIldKspzwD9pwMNe7V4ANlouy7d-oqR8o-2IURnmur7V9qQY0WFL6ipy4EQX1WGUiLwfujYLxa8p7~Vzq3xlzyR6OpccqA2inCI6o54POsoHd-YXe72eRnhmwapoqRg7gvvMQi6h2MWbnsQKyf5QLTg~u9zgLg1q6-vdNrJUc2KzI3LSaJH4kNX9KUqqTHK-2BJYlwIOhC1w5NQ1gPX3ppzH8FdYTHSSTKeySiDHRdvXoaOWi97XLwvI7J5Ao3LBb1f5lS2Ww__);
-                    "
-                  ></div>
-                  <div
-                    class="text p-4 py-xl-5 px-xl-5 d-flex align-items-center"
-                  >
-                    <div class="desc w-100">
-                      <p class="h3 mb-3">Targeting Sales</p>
-                      <p>
-                        Setup a target for a group of sales, and you can track
-                        selling achievement in realtime in the apps.
-                      </p>
-                      <div class="pt-4">
-                        <!-- <p class="name mb-0">&mdash; John Doe</p>
-                        <span class="position">Project Manager</span> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto fw-bold" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="#"
+                ><span>Product</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item smart-safety dropdown-item-with-image">
+                  <a href="#">
+                    <span class="">Smart Safety</span>
+                    <span class="sub-link">Fatigue Solution</span>
+                  </a>
+                </li>
+                <li
+                  class="dropdown-item sales-automation dropdown-item-with-image"
+                >
+                  <a href="#">
+                    <span class="">Sales Automation</span>
+                    <span class="sub-link">CRM Solutions</span>
+                  </a>
+                </li>
+                <li
+                  class="dropdown-item goodeva-enterprise dropdown-item-with-image"
+                >
+                  <a href="#">
+                    <span class="">Goodeva Enterprise</span>
+                    <span class="sub-link">Solusi Technology</span>
+                  </a>
+                </li>
+                <li
+                  class="dropdown-item digital-growth dropdown-item-with-image"
+                >
+                  <a href="#">
+                    <span>Digital Growth</span>
+                    <span class="sub-link">Marketing Solutions</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#">Solutions</a></li>
+            <li><a class="nav-link scrollto" href="#">Academy</a></li>
+            <li class="dropdown dropdown-company">
+              <a href="#"
+                ><span>Company</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#">
+                    <span>About</span>
+                    <span class="sub-link">Learn more about us</span>
+                  </a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li class="dropdown-item">
+                  <a href="#">
+                    <span>Careers</span>
+                    <span class="sub-link">Explore our openings</span>
+                  </a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li class="dropdown-item">
+                  <a href="#">
+                    <span>Contact</span>
+                    <span class="sub-link">Keep in touch with us</span>
+                  </a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li class="dropdown-item">
+                  <a href="#">
+                    <span>Goodeva Media</span>
+                    <span class="sub-link">Get our latest update</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link scrollto bahasa" href="#"
+                >English <i class="bi bi-globe2"></i
+              ></a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
 
-
-          <!-- <div class="owl-nav">
-            <button type="button" role="presentation" class="owl-prev">
-              <p>
-                <small>Prev</small
-                ><span class="ion-ios-arrow-round-back"></span>
-              </p></button
-            ><button type="button" role="presentation" class="owl-next">
-              <p>
-                <small>Next</small
-                ><span class="ion-ios-arrow-round-forward"></span>
+    <main id="main">
+      <!-- ======= banner section ======= -->
+      <section id="banner-detail-product" class="banner-detail-product">
+        <div class="container">
+          <div class="card bg-dark text-white">
+            <img
+              src="../assets/img/news/b20-indonesia.png"
+              class="card-img"
+              alt=""
+            />
+            <div class="card-img-overlay card-body">
+              <img
+                src="../assets/img/news/logo-b20.png"
+                alt=""
+                class="card-logo"
+              />
+              <h2 class="card-title">B20 Council Platform</h2>
+              <p class="card-text">
+                The B20 is an international business forum composed of
+                representatives from the G20 business community, serving as a
+                platform for dialogue between global business leaders
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="product-detail-content" id="product-detail-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="side-content">
+                <div class="client-side mb-2">
+                  <h4>Client</h4>
+                  <img src="../assets/img/logo-b20_2.png" alt="B20 Logo" />
+                </div>
+                <div class="field-side mb-2">
+                  <h4>Field</h4>
+                  <p>Global Organization</p>
+                </div>
+                <div class="scale-enterprise mb-2">
+                  <h4>Scale Enterprises</h4>
+                  <p>> 100.000 Employee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-9 col-xs-12 content">
+              <div class="content-title">
+                <h2>
+                  Goodeva Enterprise offers a conference portal creation
+                  solution custom-made, designed specifically to meet B20 unique
+                  needs.
+                </h2>
+                <div class="btn-paragraph">
+                  <button class="btn-product-detail-content scrollto">
+                    Problem
+                  </button>
+                  <button class="btn-product-detail-content scrollto">
+                    Solution
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <div class="problem-text">
+                <h3>Problem</h3>
+                <p>
+                  The B20 is an international business forum composed of
+                  representatives from the G20 business community, serving as a
+                  platform for dialogue between global business leaders and
+                  governments. With members spread across various countries, the
+                  B20 faces challenges in coordinating and holding effective and
+                  efficient meetings. In this context, the need for online
+                  conference portals becomes increasingly urgent to maintain
+                  continuity of communication and collaboration.
+                </p>
+                <p>
+                  The main challenge B20 faced was the need to create a platform
+                  that was able to accommodate multiple languages, time zones,
+                  and ensure interactive participation from all its members. B20
+                  members from diverse backgrounds and countries require easy
+                  and intuitive access to the platform, with the ability to
+                  participate in video conferences, share important documents,
+                  and collaborate through discussion forums. This diversity of
+                  members also demands solid multi-lingual support to ensure all
+                  participants can participate without language barriers.
+                </p>
+              </div>
+              <div class="solution-text">
+                <h3>Solution</h3>
+                <p>
+                  Goodeva Enterprise offers custom-made conference portal
+                  creation solutions, designed specifically to meet B20's unique
+                  needs. The first step was to conduct an in-depth needs
+                  analysis involving the Goodeva technical team and B20
+                  representatives.
+                </p>
+                <p>
+                  Through a series of workshops and discussions, Goodeva
+                  identified the key features needed, such as a secure document
+                  management system, and interactive discussion forums. The
+                  platform is also designed with an intuitive user interface to
+                  ensure easy access for all members, regardless of their
+                  technical background.
+                </p>
+
+                <img
+                  class="content-img"
+                  src="../assets/img/detail-product.png"
+                  alt=""
+                />
+
+                <p>
+                  Implementation of this solution ensures that the B20 can carry
+                  out its functions more effectively and efficiently,
+                  facilitating smooth communication and collaboration among its
+                  members in various countries.
+                </p>
+                <div class="row">
+                  <div class="col-md-2">
+                    <img
+                      class="client-img"
+                      src="../assets/img/logo-b20_2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <p>
+                      Council Platform Untuk B20 <br />
+                      An advanced digital solution designed to optimize
+                      collaboration and communication between B20 members.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="product-detail-content-mobile"
+        id="product-detail-content-mobile"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="content-title">
+                <h2>
+                  Goodeva Enterprise offers a conference portal creation
+                  solution custom-made, designed specifically to meet B20 unique
+                  needs.
+                </h2>
+                <div class="btn-paragraph">
+                  <button class="btn-product-detail-content-mobile scrollto">
+                    Problem
+                  </button>
+                  <button class="btn-product-detail-content-mobile scrollto">
+                    Solution
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="side-content">
+                <div class="client-side mb-2">
+                  <h4>Client</h4>
+                  <img src="../assets/img/logo-b20_2.png" alt="B20 Logo" />
+                </div>
+                <div class="field-side mb-2">
+                  <h4>Field</h4>
+                  <p>Global Organization</p>
+                </div>
+                <div class="scale-enterprise mb-2">
+                  <h4>Scale Enterprises</h4>
+                  <p>> 100.000 Employee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-9 col-xs-12 content">
+              <hr />
+              <div class="problem-text">
+                <h3>Problem</h3>
+                <p>
+                  The B20 is an international business forum composed of
+                  representatives from the G20 business community, serving as a
+                  platform for dialogue between global business leaders and
+                  governments. With members spread across various countries, the
+                  B20 faces challenges in coordinating and holding effective and
+                  efficient meetings. In this context, the need for online
+                  conference portals becomes increasingly urgent to maintain
+                  continuity of communication and collaboration.
+                </p>
+                <p>
+                  The main challenge B20 faced was the need to create a platform
+                  that was able to accommodate multiple languages, time zones,
+                  and ensure interactive participation from all its members. B20
+                  members from diverse backgrounds and countries require easy
+                  and intuitive access to the platform, with the ability to
+                  participate in video conferences, share important documents,
+                  and collaborate through discussion forums. This diversity of
+                  members also demands solid multi-lingual support to ensure all
+                  participants can participate without language barriers.
+                </p>
+              </div>
+              <div class="solution-text">
+                <h3>Solution</h3>
+                <p>
+                  Goodeva Enterprise offers custom-made conference portal
+                  creation solutions, designed specifically to meet B20's unique
+                  needs. The first step was to conduct an in-depth needs
+                  analysis involving the Goodeva technical team and B20
+                  representatives.
+                </p>
+                <p>
+                  Through a series of workshops and discussions, Goodeva
+                  identified the key features needed, such as a secure document
+                  management system, and interactive discussion forums. The
+                  platform is also designed with an intuitive user interface to
+                  ensure easy access for all members, regardless of their
+                  technical background.
+                </p>
+
+                <img
+                  class="content-img"
+                  src="../assets/img/detail-product.png"
+                  alt=""
+                />
+
+                <p>
+                  Implementation of this solution ensures that the B20 can carry
+                  out its functions more effectively and efficiently,
+                  facilitating smooth communication and collaboration among its
+                  members in various countries.
+                </p>
+                <div class="product-detail-content-footer-mobile">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img
+                        class="client-img"
+                        src="../assets/img/logo-b20_2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-10 col-xs-5">
+                      <p>
+                        <span>Council Platform Untuk B20 </span><br />
+                        An advanced digital solution designed to optimize
+                        collaboration and communication between B20 members.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product-detail-improve" class="product-detail-improve">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 text-product">
+              <h3>
+                Enabling business transformation. <br />
+                Accelerate now with Goodeva.
+              </h3>
+              <button class="btn-product-detail-improve scrollto">
+                WhatsApp Us <i class="bi bi-whatsapp"></i>
+              </button>
+            </div>
+            <div class="col-md-5 pt-4 pt-lg-0 text-container">
+              <img
+                class="product-img img-fluid"
+                src="../assets/img/salestrace/ninja-improve.png"
+                alt="SalesTrace"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="product-detail-improve-mobile"
+        class="product-detail-improve-mobile"
+      >
+        <div class="container">
+          <div class="text-product">
+            <h3>
+              Enabling business transformation. <br />
+              Accelerate now with Goodeva.
+            </h3>
+            <button class="btn-product-detail-improve-mobile scrollto">
+              WhatsApp Us <i class="bi bi-whatsapp"></i>
             </button>
-          </div> -->
+            <img
+              class="product-img"
+              src="../assets/img/ninja-mobile.png"
+              alt="ninja"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-menu">
+            <div class="footer-copyright">
+              <img
+                src="../assets/img/goodeva-logo.png"
+                alt="logo"
+                width="135"
+              />
+              <div class="copyright mt-3">
+                &copy; Copyright 2024 Goodeva Technology All right reserved.
+              </div>
+              <p class="pt-3">Goodeva Bagian Dari :</p>
+              <div class="credits pt-3">
+                <img
+                  src="../assets/img/footer-img1.png"
+                  alt="logo"
+                  width="50"
+                />
+                <img
+                  src="../assets/img/footer-img2.png"
+                  alt="logo"
+                  width="125"
+                />
+              </div>
+            </div>
 
+            <div class="footer-info">
+              <h4 class="footer-title">Products</h4>
+              <ul>
+                <li><a href="#">Goodeva Smart Safety</a></li>
+                <li><a href="#">Goodeva Salestrace</a></li>
+                <li><a href="#">Goodeva Enterprise</a></li>
+              </ul>
+              <ul class="d-flex">
+                <li>
+                  <a href="#">
+                    <button class="btn btn-social-media">
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                  </a>
+                </li>
+                <li class="pb-4">
+                  <a href="#">
+                    <button class="btn btn-social-media">
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-info">
+              <h4 class="footer-title">Bekasi Office 1</h4>
+              <p>
+                GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota
+                Bekasi
+              </p>
+              <h4 class="footer-title">Bekasi Office 2</h4>
+              <p>
+                GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 17, Kota
+                Bekasi
+              </p>
+            </div>
+
+            <div class="footer-contact">
+              <h4 class="footer-title">Office Phone</h4>
+              <p>
+                (021) 8273-8692 <br />
+                sales@goodeva.co.id<br />
+                ignias@goodeva.co.id<br />
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
+    </footer>
+    <!-- End Footer -->
 
+    <!-- ======= Footer Mobile ======= -->
+    <footer id="footer-mobile">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-copyright">
+            <img src="../assets/img/goodeva-logo.png" alt="logo" width="135" />
+            <div class="copyright mt-3">
+              Our flagship platform adopt artificial intelligence to serve
+              better experience and help your business go beyond innovation
+            </div>
+          </div>
+          <div class="footer-menu">
+            <div class="row">
+              <div class="col-xs-3 footer-info">
+                <h4 class="footer-title">Products</h4>
+                <ul>
+                  <li><a href="#">Goodeva Smart Safety</a></li>
+                  <li><a href="#">Goodeva Salestrace</a></li>
+                  <li><a href="#">Goodeva Enterprise</a></li>
+                </ul>
+                <p class="footer-title pt-3">Goodeva Part of:</p>
+                <div class="credits pt-3">
+                  <img
+                    src="../assets/img/footer-img1.png"
+                    alt="logo"
+                    width="30"
+                  />
+                  <img
+                    src="../assets/img/footer-img2.png"
+                    alt="logo"
+                    width="80"
+                  />
+                </div>
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">
+                      <button class="btn btn-social-media">
+                        <i class="bi bi-instagram"></i>
+                      </button>
+                    </a>
+                  </li>
+                  <li class="pb-4">
+                    <a href="#">
+                      <button class="btn btn-social-media">
+                        <i class="bi bi-facebook"></i>
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              </div>
+              <div class="row">
+              <div class="col-xs-3 footer-info2">
+                <h4 class="footer-title">Bekasi Office 1</h4>
+                <p>
+                  GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15,
+                  Kota Bekasi
+                </p>
+                <div class="footer-contact">
+                  <h4 class="footer-title">Office Phone</h4>
+                  <p>
+                    (021) 8273-8692 <br />
+                    sales@goodeva.co.id<br />
+                    ignias@goodeva.co.id<br />
+                  </p>
+                </div>
+
+                <h4 class="footer-title">Bekasi Office 2</h4>
+                <p>
+                  GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 17,
+                  Kota Bekasi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- corousel template -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/owl-corousel.js"></script>
   </body>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/owl-corousel.js"></script>
 </html>

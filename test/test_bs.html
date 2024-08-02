@@ -42,247 +42,266 @@
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet" />
-    <style>
-      #banner-detail-product {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-      }
-
-      #banner-detail-product .card {
-        width: 100%;
-        height: auto !important;
-        border-radius: 26px;
-      }
-
-      #banner-detail-product .card .card-img {
-        width: 100%;
-        height: 375px;
-        object-fit: cover;
-        border-radius: 26px;
-      }
-
-      #banner-detail-product .card-body {
-        padding-top: 2rem;
-        background-color: #00000076;
-        border-radius: 26px;
-        padding-left: 3rem;
-      }
-
-      #banner-detail-product .card-body .card-logo {
-        width: 12rem;
-        height: auto;
-      }
-
-      #banner-detail-product .card-body .card-title {
-        font-family: "Inter", sans-serif;
-        padding-top: 3rem;
-        font-size: 46.98px;
-        font-weight: 600;
-        line-height: 61.08px;
-        letter-spacing: -0.03em;
-        text-align: left;
-      }
-
-      #banner-detail-product .card-body .card-text {
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 36px;
-        text-align: left;
-        text-wrap: break-word;
-      }
-
-      #banner-detail-product .card-body .btn-see-more {
-        font-family: "Inter", sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 22.4px;
-        letter-spacing: -0.02em;
-        text-align: left;
-
-        display: inline-block;
-        padding: 12px 45px;
-        border-radius: 30px;
-        transition: ease-in-out 0.3s;
-        color: #fff;
-        background: transparent;
-        border: 2px solid #fff;
-      }
-
-      #banner-detail-product .card-body .btn-see-more:hover {
-        background: #fff;
-        color: #000;
-      }
-
-      #banner-detail-product .card-body .btn-see-more span {
-        padding-right: 20px;
-      }
-
-      #banner-detail-product .benifit-nav {
-        display: flex !important;
-        align-items: center !important;
-      }
-
-      #banner-detail-product .corousel-nav {
-        display: flex !important;
-        padding: 10px 32px;
-        border-radius: 30px;
-        transition: ease-in-out 0.3s;
-        color: #fff;
-        border: #fff 1px solid;
-        text-align: center;
-        align-items: center;
-        margin-top: 8rem;
-      }
-
-      #banner-detail-product .corousel-nav:hover {
-        background: #fff;
-        color: #000;
-      }
-
-      #banner-detail-product .corousel-nav span {
-        font-size: 20px;
-        text-align: center;
-      }
-
-      #banner-detail-product .benifit-nav p {
-        margin-top: auto;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        color: #9c9c9c;
-      }
-
-      #banner-detail-product .benifit-nav p u {
-        color: #fff;
-      }
-    </style>
-
-    <!-- <style>
-      #goodeva-carousel {
-        margin-bottom: 10rem;
-        margin-top: 10rem;
-      }
-
-      #goodeva-carousel .carousel {
-        width: 100%;
-        height: auto;
-        border-radius: 1rem;
-      }
-
-      #goodeva-carousel .carousel-inner .carousel-item .carousel-img {
-        width: 100%;
-        height: 614px;
-        object-fit: cover;
-        border-radius: 1rem;
-      }
-
-      #goodeva-carousel .carousel-item .carousel-caption {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        top: 0;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        padding-left: 3rem;
-        color: white !important;
-        text-align: left;
-        background-color: #00000076;
-        border-radius: 1rem;
-      }
-
-      #goodeva-carousel .carousel-item .carousel-caption .carousel-logo {
-        width: 10rem;
-        height: auto;
-      }
-      
-
-      #goodeva-carousel .carousel-item .carousel-caption .carousel-title {
-        padding-top: 7rem;
-        font-family: "Inter", sans-serif;
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 65px;
-        letter-spacing: -0.03em;
-        text-align: left;
-      }
-
-      #goodeva-carousel .carousel-item .carousel-caption .carousel-text {
-        font-family: "Inter", sans-serif;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 33px;
-        text-align: left;
-      }
-
-      #goodeva-carousel .carousel-item .carousel-caption .btn-see-more {
-        font-family: "Inter", sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 22.4px;
-        letter-spacing: -0.02em;
-        text-align: left;
-
-        display: inline-block;
-        padding: 12px 45px;
-        border-radius: 30px;
-        transition: ease-in-out 0.3s;
-        color: #fff;
-        background: transparent;
-        border: 2px solid #fff;
-      }
-
-
-      #goodeva-carousel .carousel-item .carousel-caption .btn-see-more:hover {
-        background: #fff;
-        color: #000;
-      }
-
-      #goodeva-carousel .carousel-item .carousel-caption .btn-see-more span {
-        padding-right: 20px;
-      }
-
-      #goodeva-carousel .benifit-nav {
-        display: flex !important;
-        align-items: center !important;
-      }
-
-      #goodeva-carousel .corousel-nav {
-        display: flex !important;
-        padding: 10px 32px;
-        border-radius: 30px;
-        transition: ease-in-out 0.3s;
-        color: #fff;
-        border: #fff 1px solid;
-        text-align: center;
-        align-items: center;
-        margin-top: 8rem;
-      }
-
-      #goodeva-carousel .corousel-nav:hover {
-        background: #fff;
-        color: #000;
-      }
-
-      #goodeva-carousel .corousel-nav span {
-        font-size: 20px;
-        text-align: center;
-      }
-
-      #goodeva-carousel .benifit-nav p {
-        margin-top: auto;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        color: #9c9c9c;
-      }
-
-      #goodeva-carousel .benifit-nav p u {
-        color: #fff;
-      }
-
-
-    </style> -->
   </head>
+
+  <style>
+    
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero .first-hero {
+  background-image: url("../assets/img/hero-homepage1.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .second-hero {
+  background-image: url("../assets/img/hero-homepage2.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .third-hero {
+  background-image: url("../assets/img/hero-homepage3-part.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .first-hero img {
+  width: 85%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  margin-top: 6rem;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#hero .second-hero img {
+  width: 126%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  margin-top: 6rem;
+  padding: 0;
+  color: #fff;
+}
+
+#hero .third-hero img {
+  width: 87%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  margin-top: 6rem;
+  padding: 0;
+  color: #fff;
+}
+
+#hero .bg-hero {
+  width: 100%;
+}
+
+#hero .container {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(5%, -50%);
+}
+
+#hero h1 {
+  margin: 0 0 29px;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #fff;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+}
+
+#hero .company-name {
+  font-size: 18px;
+  font-weight: 1;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 19px;
+}
+
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #26a7b5;
+}
+
+#hero .btn-get-started:hover {
+  background: #abe1e8;
+}
+
+#hero .btn-get-started span {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+#hero .text-hero {
+  right: 0;
+  display: flex;
+  padding-left: 40rem;
+}
+
+/* @media (max-width: 992px) {
+  #hero {
+    height: calc(100vh - 70px);
+  }
+} */
+
+@media screen and (min-width: 768px) {
+  #hero-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    display: none !important;
+  }
+
+  #hero-mobile .first-hero {
+    background-image: url("../assets/img/hero-homepage1.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+
+  #hero-mobile .second-hero {
+    background-image: url("../assets/img/hero-homepage2.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+
+  #hero-mobile .third-hero {
+    background-image: url("../assets/img/hero-homepage3-part.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+
+  #hero-mobile .first-hero img {
+    width: 85%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    margin-top: 6rem;
+    padding: 0;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  #hero-mobile .second-hero img {
+    width: 126%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    margin-top: 6rem;
+    padding: 0;
+    color: #fff;
+  }
+
+  #hero-mobile .third-hero img {
+    width: 87%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    margin-top: 6rem;
+    padding: 0;
+    color: #fff;
+  }
+
+  #hero-mobile .bg-hero {
+    width: 100%;
+  }
+
+  #hero-mobile .container {
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    /* transform: translate(5%, -50%); */
+  }
+
+  #hero-mobile h1 {
+    margin: 0 0 29px;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #fff;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+  }
+
+  #hero-mobile .company-name {
+    font-size: 18px;
+    font-weight: 1;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+
+  #hero-mobile h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 19px;
+  }
+
+  #hero-mobile .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    display: inline-block;
+    padding: 12px 45px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #26a7b5;
+  }
+
+  #hero-mobile .btn-get-started:hover {
+    background: #abe1e8;
+  }
+
+  #hero-mobile .btn-get-started span {
+    font-size: 14px;
+    padding-right: 20px;
+  }
+
+  #hero-mobile .text-hero {
+    left: 0;
+    display: flex;
+    /* padding-left: 40/rem; */
+  }
+}
+
+  </style>
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
@@ -384,6 +403,115 @@
       </div>
     </header>
     <!-- End Header -->
+
+      <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="bg-hero">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active first-hero">
+            <div class="col-md-6">
+              <img src="../assets/img/hero-hompage-asset.png" alt="">
+            </div>
+            <div class="col-md-6 col-sm-10 text-hero">
+              <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+                <span class="company-name">Goodeva Technology</span>
+                <h1>Wearables and <br>Apps Integration</h1>
+                <h2>The best fatigue detection application in Indonesia,<br> Goodeva Smart Safety by Goodeva.</h2>
+
+                <a href="#" class="btn-get-started scrollto">
+                  <span>Get Started </span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item second-hero">
+            <div class="col-md-6">
+              <img src="../assets/img/hero-homepage-asset2.png" alt="">
+            </div>
+            <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+              <span class="company-name">Goodeva Technology</span>
+              <h1>Prevent Accidents <br> Due to Fatigue</h1>
+              <h2>By using Goodeva Smart Safety</h2>
+
+              <a href="#" class="btn-get-started scrollto">
+                <span>Get Started </span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="carousel-item third-hero">
+            <div class="col-md-6">
+              <img src="../assets/img/hero-homepage-asset3.png" alt="">
+            </div>
+            <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+              <span class="company-name">Goodeva Technology</span>
+              <h1>Transforming <br> Global Technology</h1>
+              <h2>Global Innovation Partner Technology</h2>
+
+              <a href="#" class="btn-get-started scrollto">
+                <span>Get Started </span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Hero Section Mobile ======= -->
+  <section id="hero-mobile" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="bg-hero">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active first-hero">
+            <div class="text-hero">
+              <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+                <span class="company-name">Goodeva Technology</span>
+                <h1>Wearables and <br>Apps Integration</h1>
+                <h2>The best fatigue detection application in Indonesia,<br> Goodeva Smart Safety by Goodeva.</h2>
+
+                <a href="#" class="btn-get-started scrollto">
+                  <span>Get Started </span><i class="bi bi-arrow-right"></i></a>
+                  <img src="/assets/img/hero-hompage-asset.png" alt="">
+                </div>
+
+            </div>
+          </div>
+          <div class="carousel-item second-hero">
+              <img src="/assets/img/hero-homepage-asset2.png" alt="">
+            <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+              <span class="company-name">Goodeva Technology</span>
+              <h1>Prevent Accidents <br> Due to Fatigue</h1>
+              <h2>By using Goodeva Smart Safety</h2>
+
+              <a href="#" class="btn-get-started scrollto">
+                <span>Get Started </span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="carousel-item third-hero">
+              <img src="/assets/img/hero-homepage-asset3.png" alt="">
+            <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+              <span class="company-name">Goodeva Technology</span>
+              <h1>Transforming <br> Global Technology</h1>
+              <h2>Global Innovation Partner Technology</h2>
+
+              <a href="#" class="btn-get-started scrollto">
+                <span>Get Started </span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
     <main id="main">
       <!-- ======= banner section ======= -->
@@ -729,69 +857,105 @@
       </section> -->
     </main>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-6 footer-contact">
-              <img src="/assets/img/goodeva-logo.png" alt="logo" width="135" />
-              <div class="copyright mt-3">
-                &copy; Copyright 2024 Goodeva Technology <br />
-                All right reserved.
-              </div>
-              <p class="pt-3">Goodeva Bagian Dari :</p>
-              <div class="credits pt-3">
-                <img src="/assets/img/footer-img1.png" alt="logo" width="50" />
-                <img src="/assets/img/footer-img2.png" alt="logo" width="125" />
-              </div>
-            </div>
+    <style>
+      /* Shared styles */
+      #footer,
+      #footer-mobile {
+        color: #080808;
+        font-size: 14px;
+        background: #f7fbfe;
+      }
 
-            <div class="col-lg-2 col-md-6 footer-links">
+      .footer-title {
+        font-family: "inter", sans-serif;
+        font-weight: 700;
+        line-height: 22.94px;
+        text-align: left;
+      }
+
+      .footer-info ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-info ul li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-info ul a {
+        color: #1d1d1d;
+        transition: 0.3s;
+        display: inline-block;
+        line-height: 1;
+      }
+
+      .footer-info ul a:hover {
+        text-decoration: none;
+        color: #3498db;
+      }
+    </style>
+    <!-- ======= Footer ======= -->
+    <footer id="footer-mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../assets/img/goodeva-logo.png" alt="logo" width="135" />
+            <div class="copyright mt-3">
+              <p>
+                Our flagship platform adopt artificial intelligence to serve
+                better experience and help your business go beyond innovation
+              </p>
+            </div>
+          </div>
+          <div class="col-md-8 d-flex flex-wrap justify-content-between">
+            <div class="footer-info">
               <h4 class="footer-title">Products</h4>
-              <ul>
+              <ul class="list-unstyled">
                 <li><a href="#">Goodeva Smart Safety</a></li>
                 <li><a href="#">Goodeva Salestrace</a></li>
                 <li><a href="#">Goodeva Enterprise</a></li>
               </ul>
-              <ul class="d-flex">
-                <li>
-                  <a href="#">
-                    <button class="btn btn-social-media">
-                      <i class="bi bi-instagram"></i>
-                    </button>
-                  </a>
-                </li>
-                <li class="pb-4">
-                  <a href="#">
-                    <button class="btn btn-social-media">
-                      <i class="bi bi-facebook"></i>
-                    </button>
-                  </a>
-                </li>
-              </ul>
             </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4 class="footer-title">Bekasi Office 1</h4>
+            <div class="footer-info">
+              <h4 class="footer-title">Contact</h4>
+              <p>Bekasi Office 1</p>
               <p>
                 GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 15, Kota
                 Bekasi
               </p>
-              <h4 class="footer-title">Bekasi Office 2</h4>
+              <div class="footer-contact">
+                <h4 class="footer-title">Office Phone</h4>
+                <p>
+                  (021) 8273-8692 <br />
+                  sales@goodeva.co.id<br />
+                  ignas@goodeva.co.id<br />
+                </p>
+              </div>
+              <p>Bekasi Office 2</p>
               <p>
                 GOODEVA CBD Division, Grand Galaxy Commercial RSK 6 No. 17, Kota
                 Bekasi
               </p>
             </div>
-
-            <div class="col-lg-2 col-md-6 footer-newsletter">
-              <h4 class="footer-title">Office Phone</h4>
-              <p>
-                (021) 8273-8692 <br />
-                sales@goodeva.co.id<br />
-                ignias@goodeva.co.id<br />
-              </p>
+            <div class="footer-info">
+              <h4 class="footer-title">Goodeva's Part Of:</h4>
+              <img src="../assets/img/footer-img1.png" alt="logo" width="50" />
+              <img src="../assets/img/footer-img2.png" alt="logo" width="125" />
+            </div>
+            <div class="footer-info d-flex justify-content-end">
+              <a href="#">
+                <button class="btn btn-social-media">
+                  <i class="bi bi-instagram"></i>
+                </button>
+              </a>
+              <a href="#">
+                <button class="btn btn-social-media">
+                  <i class="bi bi-facebook"></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
