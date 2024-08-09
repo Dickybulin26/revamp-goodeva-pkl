@@ -30,190 +30,206 @@
 </head>
 
 <style>
-  /** card-benifit */
-  #card-benifit {
-    background-color: #f8f8f8;
-    padding-bottom: 1rem;
-    /* margin-top: 5rem;
-    margin-bottom: 5rem; */
+  /** salestrace-corousel */
+  #salestrace-benifit {
+    background-color: rgba(21, 25, 28, 1);
+    margin-bottom: 1rem;
   }
 
-  #card-benifit .title-service h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: #000;
-    padding-top: 5rem;
-  }
-
-  #card-benifit .title-service p {
-    font-family: "Inter", sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 37.5px;
-    text-align: left;
+  #salestrace-benifit img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    padding: 0;
     color: #fff;
-    margin-top: 2rem;
+    object-fit: cover;
+  }
+
+  #salestrace-benifit .bg-salestrace-benifit {
+    width: 100%;
+    height: auto;
+  }
+
+  #salestrace-benifit .container {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 2rem;
+  }
+
+  #salestrace-benifit h1 {
+    margin: 0 0 29px;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 64px;
+    color: #fff;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+  }
+
+  #salestrace-benifit .company-name {
+    font-size: 18px;
+    font-weight: 1;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+
+  #salestrace-benifit h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 19px;
+  }
+
+  #salestrace-benifit .benifit-nav {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  #salestrace-benifit .corousel-nav {
+    display: flex !important;
+    padding: 16px 32px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    border: #fff 1px solid;
+    text-align: center;
+    align-items: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 2rem;
   }
 
-  #card-benifit .card-deck {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  #salestrace-benifit .corousel-nav:hover {
+    background: #fff;
+    color: #000;
   }
 
-  #card-benifit .card {
-    width: 10rem;
-    height: 250px;
-    border-radius: 1rem;
-    transition: transform 0.5s;
-    border: none !important;
+  #salestrace-benifit .corousel-nav span {
+    font-size: 20px;
+    text-align: center;
   }
 
-  #card-benifit .explenation-card {
-    font-family: "Inter", sans-serif;
-    background-image: linear-gradient(to bottom right, #4a4a4a, #000000);
-    height: 150%;
-    margin-bottom: 1rem;
-    width: 18rem;
+  #salestrace-benifit .benifit-nav p {
+    margin-top: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
-  #card-benifit .card .card-img-top {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-
-  #card-benifit .card .card-img-top.main-card {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-
-  #card-benifit .card.first-card {
-    width: 59rem;
-    height: 250px;
-  }
-
-  #card-benifit .card-body {
-    position: absolute;
+  #salestrace-benifit .benifit-nav p u {
     color: #fff;
-    bottom: 0;
-    left: 0;
+  }
+
+  #salestrace-benifit .text-salestrace-benifit {
     right: 0;
-    padding: 1rem;
-    font-size: 12px;
-    top: 0;
-    border-radius: 1rem;
+    display: flex;
+    padding-left: 40rem;
   }
 
-  #card-benifit .card-deck .card-logo {
-    max-width: 4rem;
-    padding-top: 3rem;
-  }
-
-  #card-benifit .card-deck .card-logo.b20 {
-    width: 5rem;
-  }
-
-  #card-benifit .card-title {
-    padding-top: 1rem;
-
-    font-family: "Inter", sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-  }
-
-  @media screen and (min-width: 728px) {
-    #card-benifit-mobile {
+  @media (min-width: 768px) {
+    #salestrace-benifit-mobile {
       display: none !important;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    #card-benifit {
+  /** salestrace-corousel mobile */
+  @media (max-width: 768px) {
+    #salestrace-benifit {
       display: none !important;
     }
 
-    /** card-benifit */
-    #card-benifit-mobile {
-      background-color: #f8f8f8;
-      padding-bottom: 1rem;
+    #salestrace-benifit-mobile {
+      background-color: #15191C;
+      margin-bottom: 15rem;
+      margin-top: 15rem;
     }
 
-    #card-benifit-mobile .title-service h2 {
-      font-family: "Inter", sans-serif;
-
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-
-      padding-left: 1rem;
-      padding-right: 1rem;
-      color: #000;
-      padding-top: 5rem;
-    }
-
-    #card-benifit-mobile .title-service p {
-      font-family: "Inter", sans-serif;
-
+    #salestrace-benifit-mobile img {
+      width: 100%;
+      height: 30vh;
+      background-size: cover;
+      position: relative;
+      padding: 0;
       color: #fff;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 21px;
-      text-align: center;
-      /* margin-bottom: 1rem; */
-    }
-
-    #card-benifit-mobile .card {
-      width: 100%;
-      height: 20rem;
-      border-radius: 1rem;
-      transition: transform 0.5s;
-      border: none !important;
-    }
-
-    #card-benifit-mobile .card .card-img-top {
-      width: 100%;
-      height: 25rem;
       object-fit: cover;
-      border-radius: 1rem;
     }
 
-    #card-benifit-mobile .card-body {
-      position: absolute;
-      color: #fff;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 1rem;
-      font-size: 12px;
-      top: 0;
-      border-radius: 1rem;
+    #salestrace-benifit-mobile .container {
+      z-index: 5 !important;
+      padding-top: 2rem;
     }
 
-    #card-benifit-mobile .card-title {
-      padding-top: 1rem;
-
-      font-family: "Inter", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
+    #salestrace-benifit-mobile h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 31.2px;
+      letter-spacing: -0.03em;
       text-align: left;
+      color: #fff;
+    }
 
+    #salestrace-benifit-mobile .company-name {
+      font-size: 18px;
+      font-weight: 1;
+      letter-spacing: 3px;
+      color: #fff;
+    }
+
+    #salestrace-benifit-mobile h2 {
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+      padding-right: 3rem;
+    }
+
+    #salestrace-benifit-mobile .benifit-nav {
+      display: flex !important;
+      align-items: center !important;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+
+    #salestrace-benifit-mobile .corousel-nav {
+      display: flex !important;
+      text-align: center;
+      align-items: center;
+      padding: 5px 28px;
+      border-radius: 30px;
+      transition: ease-in-out 0.3s;
+      color: #fff;
+      border: #fff 1px solid;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 2rem;
+    }
+
+    #salestrace-benifit-mobile .corousel-nav:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    #salestrace-benifit-mobile .corousel-nav span {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    #salestrace-benifit-mobile .benifit-nav p {
+      margin-top: auto;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+    #salestrace-benifit-mobile .benifit-nav p u {
+      color: #fff;
+    }
+
+    #salestrace-benifit-mobile .text-salestrace-benifit {
+      display: flex;
     }
   }
 </style>
@@ -305,73 +321,191 @@
   <!-- End Header -->
 
   <main id="main">
-    <!-- benifit card -->
-    <section class="card-benifit" id="card-benifit">
-      <div class="container">
-        <div class="title-service text-center fw-bold pt-5">
-          <div class="row">
-            <div class="col-md-7">
-              <h2>
-                Manage marketing & sales <br />
-                activity enabling them to <br />
-                sell more
-              </h2>
-            </div>
 
-            <div class="col-md-5">
-              <div class="card explenation-card">
-                <p>
-                  We serve advanced technology for integrating all sales data
-                  from devices from customer data to sales data then processed
-                  with AI
-                </p>
+    <!-- ======= salestrace-carousel section ======= -->
+    <section id="salestrace-benifit" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="bg-salestrace-benifit">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="col-lg-6 col-sm-10">
+                <img src="../assets/img/salestrace/carousel-benifit1.png" class="d-block" alt="" />
+
+              </div>
+              <div class="col-lg-10 col-sm-10 text-salestrace-benifit">
+                <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+                  <h1>Targeting Sales</h1>
+                  <h2>
+                    Setup a target for a group of sales, and you can <br />
+                    track selling achievement in realtime in the apps.
+                  </h2>
+
+                  <div class="benifit-nav">
+                    <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev">
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>01</u>/03</p>
+
+                    <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next">
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            <div class="carousel-item">
+              <div class="col-lg-6 col-sm-10">
+                <img src="../assets/img/salestrace/carousel-benifit2.png" class="d-block" alt="" />
 
-        <div class="card-deck">
-          <div class="card first-card">
-            <img src="/assets/img/salestrace/card-benefit1.png" class="card-img-top main-card" alt="api" />
-            <div class="card-body"></div>
-          </div>
-          <div class="card">
-            <img src="/assets/img/salestrace/card-benefit2.png" class="card-img-top" alt="monitoring" />
-            <div class="card-body"></div>
-          </div>
-          <div class="card">
-            <img src="/assets/img/salestrace/card-benefit3.png" class="card-img-top" alt="notification" />
-            <div class="card-body"></div>
+              </div>
+              <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+                <span class="company-name">Goodeva Technology</span>
+                <h1>Targeting Sales</h1>
+                <h2>
+                  Setup a target for a group of sales, and you can <br />
+                  track selling achievement in realtime in the apps.
+                </h2>
+                <div class="benifit-nav">
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span><i class="bi bi-arrow-left"></i></span>
+                  </a>
+
+                  <p><u>02</u>/03</p>
+
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-lg-6 col-sm-10">
+                <img src="../assets/img/salestrace/card-benefit3.png" class="d-block" alt="" />
+
+              </div>
+              <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
+                <span class="company-name">Goodeva Technology</span>
+                <h1>Targeting Sales</h1>
+                <h2>
+                  Setup a target for a group of sales, and you can <br />
+                  track selling achievement in realtime in the apps.
+                </h2>
+
+                <div class="benifit-nav">
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span><i class="bi bi-arrow-left"></i></span>
+                  </a>
+
+                  <p><u>03</u>/03</p>
+
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= Card Benerfit Mobile ======= -->
-    <section class="card-benifit-mobile" id="card-benifit-mobile">
-      <div class="container">
-        <div class="title-service text-center fw-bold pt-5">
-          <div class="row">
-            <div class="col-md-7">
-              <h2>
-                Manage marketing & sales
-                activity enabling them to
-                sell more
-              </h2>
-            </div>
-          </div>
-          <!-- test -->
-          <div class="card mobile-redmi w-100">
-            <img src="/assets/img/salestrace/card-benefit1.png" class="card-img-top mobile" alt="card-benefit">
-            <div class="card-body"
-              style="background-image: linear-gradient(to bottom right, #4a4a4a, #000000); height: 6rem; border-radius: 1rem 1rem 0 0;">
-              <p class="card-text">We serve advanced technology for integrating all sales data
-                from devices from customer data to sales data then processed
-                with AI</p>
-            </div>
-          </div>
-    </section>
+    <!-- ======= salestrace-carousel mobile ======= -->
+    <section id="salestrace-benifit-mobile" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="bg-salestrace-benifit">
+        <div id="salestraceCarouselMobile" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-img">
+                <img src="../assets/img/salestrace/carousel-benifit1.png" class="d-block" alt="" />
+              </div>
+              <div class="text-salestrace-benifit">
+                <div class="corusel-caption container">
+                  <h1>Targeting Sales</h1>
+                  <h2>
+                    Setup a target for a group of sales, and you can 
+                    track selling achievement in realtime in the apps.
+                  </h2>
 
+                  <div class="benifit-nav">
+                    <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
+                      data-bs-slide="prev">
+                      <span><i class="bi bi-arrow-left"></i></span>
+                    </a>
+
+                    <p><u>01</u>/03</p>
+
+                    <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
+                      data-bs-slide="next">
+                      <span><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-lg-6 col-sm-10">
+                <img src="../assets/img/salestrace/carousel-benifit2.png" class="d-block" alt="" />
+
+              </div>
+              <div class="corusel-caption container">
+                <h1>Targeting Sales</h1>
+                <h2>
+                  Setup a target for a group of sales, and you can 
+                  track selling achievement in realtime in the apps.
+                </h2>
+                <div class="benifit-nav">
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
+                    data-bs-slide="prev">
+                    <span><i class="bi bi-arrow-left"></i></span>
+                  </a>
+
+                  <p><u>02</u>/03</p>
+
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
+                    data-bs-slide="next">
+                    <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-lg-6 col-sm-10">
+                <img src="../assets/img/salestrace/card-benefit3.png" class="d-block" alt="" />
+
+              </div>
+              <div class="corusel-caption container">
+                <h1>Targeting Sales</h1>
+                <h2>
+                  Setup a target for a group of sales, and you can 
+                  track selling achievement in realtime in the apps.
+                </h2>
+
+                <div class="benifit-nav">
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
+                    data-bs-slide="prev">
+                    <span><i class="bi bi-arrow-left"></i></span>
+                  </a>
+
+                  <p><u>03</u>/03</p>
+
+                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
+                    data-bs-slide="next">
+                    <span><i class="bi bi-arrow-right"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
