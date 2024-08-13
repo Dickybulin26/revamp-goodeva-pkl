@@ -51,7 +51,7 @@ a:hover {
 }
 
 .goodeva-enterprise {
-  background-image: url('../img/navbar/goodeva-enterprise.jpg');
+  background-image: url("../img/navbar/goodeva-enterprise.jpg");
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.75);
@@ -278,7 +278,7 @@ h6 {
 }
 
 .navbar .bahasa {
-  /* padding-left: 20rem; */
+  padding-left: 20rem;
 }
 
 @media (max-width: 1366px) {
@@ -404,7 +404,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero .first-hero {
-  background-image: url("../img/hero-homepage1.png");
+  background-image: url("../img/hero-homepage1-revisi2.png");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -412,7 +412,7 @@ h6 {
 }
 
 #hero .second-hero {
-  background-image: url("../img/hero-homepage2.png");
+  background-image: url("../img/hero-homepage2-revisi2.png");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -420,7 +420,7 @@ h6 {
 }
 
 #hero .third-hero {
-  background-image: url("../img/hero-homepage3-part.png");
+  background-image: url("../img/hero-homepage3-part-revisi2-v2.png");
   width: 100%;
   height: auto;
   background-size: cover;
@@ -428,18 +428,17 @@ h6 {
 }
 
 #hero .first-hero img {
-  width: 85%;
+  width: 83%;
   height: auto;
   background-size: cover;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 6.2rem;
   padding: 0;
   color: #fff;
-  margin-bottom: 1rem;
 }
 
 #hero .second-hero img {
-  width: 126%;
+  width: 93%;
   height: auto;
   background-size: cover;
   position: relative;
@@ -449,11 +448,11 @@ h6 {
 }
 
 #hero .third-hero img {
-  width: 87%;
+  width: 124%;
   height: auto;
   background-size: cover;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 0;
   color: #fff;
 }
@@ -520,12 +519,6 @@ h6 {
   padding-left: 40rem;
 }
 
-/* @media (max-width: 992px) {
-  #hero {
-    height: calc(100vh - 70px);
-  }
-} */
-
 @media screen and (min-width: 768px) {
   #hero-mobile {
     display: none !important;
@@ -538,60 +531,56 @@ h6 {
   }
 
   #hero-mobile .first-hero {
-    background-image: url("../img/hero-homepage1.png");
+    background-image: url("../img/hero-homepage-mobile-part-revisi2.png");
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-size: cover;
     position: relative;
-    box-shadow: inset 0px 0px 0px 2000px #36566abb;
   }
 
   #hero-mobile .second-hero {
     background-image: url("../img/hero-homepage2.png");
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-size: cover;
     position: relative;
     box-shadow: inset 0px 0px 0px 2000px #36566abb;
   }
 
   #hero-mobile .third-hero {
-    background-image: url("../img/hero-homepage3-part.png");
+    background-image: url("../img/hero-homepage3-part-revisi2.png");
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-size: cover;
     position: relative;
-    box-shadow: inset 0px 0px 0px 2000px #36566abb;
   }
 
   #hero-mobile .first-hero img {
-    width: 85%;
+    width: 90%;
     height: auto;
     background-size: cover;
     position: relative;
     margin-top: 6rem;
     padding: 0;
     color: #fff;
-    margin-bottom: 1rem;
   }
 
   #hero-mobile .second-hero img {
-    width: 150%;
-    height: 67vh;
+    width: 92%;
+    height: auto;
     background-size: cover;
     position: relative;
-    margin-top: 7.3rem;
-    margin-left: -20px;
+    margin-top: 3.4rem;
     padding: 0;
     color: #fff;
   }
 
   #hero-mobile .third-hero img {
-    width: 110%;
+    width: 140%;
     height: auto;
     background-size: cover;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 3.6rem;
     padding: 0;
     color: #fff;
   }
@@ -662,8 +651,6 @@ h6 {
 
   #hero-mobile .text-hero {
     right: 0;
-    /* display: flex; */
-    /* padding-left: 40rem; */
   }
 
   #hero-mobile .asset-img {
@@ -781,9 +768,6 @@ h6 {
 }
 
 #product-smart-safety .text-container {
-  /* top: 70%;
-  left: 70%; */
-  /* transform: translate(1.5rem, 8%); */
   padding-top: 5rem;
   padding-left: 5rem;
 }
@@ -811,10 +795,6 @@ h6 {
   object-fit: contain;
   margin-left: -20%;
   margin-bottom: 5rem;
-  /* margin-left: -7rem;
-  margin-top: -10rem;
-  margin-bottom: -5rem;
-  margin-right: 5rem; */
 }
 
 #product-smart-safety img {
@@ -1208,6 +1188,27 @@ h6 {
   background-color: #f1f5f9;
 }
 
+#news-section .section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
+}
+
+#news-section .section-title h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #1d1d11;
+}
+
 #news-section .card-deck {
   margin-top: 3rem;
   display: flex;
@@ -1219,13 +1220,19 @@ h6 {
 
 #news-section .card {
   width: 25rem;
+  height: 20rem;
   border-radius: 1rem;
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+#news-section .card:hover {
+  transform: scale(1.1);
 }
 
 #news-section .card .card-img-top {
   width: 100%;
-  height: auto;
+  height: 20rem;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -1241,59 +1248,28 @@ h6 {
   font-size: 12px;
   top: 0;
   border-radius: 1rem;
-}
-
-#news-section .card-deck .card-logo {
-  max-width: 9rem;
-}
-
-#news-section .card-deck .card-logo.b20 {
-  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #news-section .card-info {
   bottom: 0;
   position: absolute;
-  padding: 1rem;
+  padding: 18px 41px 5px 41px;
+  background-color: #26a7b5;
+  border-radius: 26px 26px 0px 0px;
 }
 
-#news-section .card-deck .card p {
+#news-section .card-deck .card h5 {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 14.52px;
-  text-align: left;
-  color: #fff;
-}
-
-#news-section .nav-underline {
-  border: none;
-  display: flex;
-  justify-content: center;
-  z-index: 3 !important;
-  position: relative;
-  gap: 10rem;
-}
-
-#news-section .nav-link {
-  border: none;
-  color: #959595;
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 41.6px;
+  letter-spacing: -0.03em;
   text-align: center;
-  margin-top: 2rem;
-}
-
-#news-section .nav-link:hover {
-  border-bottom: 2px solid #26a7b5;
-  color: #1d1d1d;
-}
-
-#news-section .nav-link.active {
-  border-bottom: 2px solid #26a7b5;
-  color: #1d1d1d;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1324,13 +1300,14 @@ h6 {
 
   #news-section-mobile .card {
     width: 25rem;
+    height: 20rem;
     border-radius: 1rem;
     cursor: pointer;
   }
 
   #news-section-mobile .card .card-img-top {
     width: 100%;
-    height: auto;
+    height: 20rem;
     object-fit: cover;
     border-radius: 1rem;
   }
@@ -1346,65 +1323,28 @@ h6 {
     font-size: 12px;
     top: 0;
     border-radius: 1rem;
-  }
-
-  #news-section-mobile .card-deck .card-logo {
-    max-width: 9rem;
-  }
-
-  #news-section-mobile .card-deck .card-logo.b20 {
-    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #news-section-mobile .card-info {
     bottom: 0;
-    font-size: 12px;
     position: absolute;
-    padding: 1rem;
+    padding: 18px 41px 5px 41px;
+    background-color: #26a7b5;
+    border-radius: 26px 26px 0px 0px;
   }
 
-  #news-section-mobile .card-deck .card p {
+  #news-section .card-deck .card h5 {
     font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 14.52px;
-    text-align: left;
-    color: #fff;
-  }
-
-  #news-section-mobile .nav-underline {
-    border: none;
-    display: inline-flex;
-    justify-content: center;
-    z-index: 3 !important;
-    position: relative;
-    gap: 1rem;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    padding-left: 1rem;
-    width: max-content;
-  }
-
-  #news-section-mobile .nav-link {
-    border: none;
-    color: #959595;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 22.83px;
+    line-height: 41.6px;
+    letter-spacing: -0.03em;
     text-align: center;
-    margin-top: 2rem;
-  }
-
-  #news-section-mobile .nav-link:hover {
-    border-bottom: 2px solid #26a7b5;
-    color: #1d1d1d;
-  }
-
-  #news-section-mobile .nav-link.active {
-    border-bottom: 2px solid #26a7b5;
-    color: #1d1d1d;
+    color: #fff;
   }
 }
 
@@ -1936,7 +1876,6 @@ h6 {
   }
 
   #footer-mobile .footer-menu {
-    /* gap: 3.4rem; */
     display: flex;
     justify-content: space-between;
   }
@@ -3749,6 +3688,11 @@ h6 {
   height: auto;
 }
 
+#chartdiv {
+  width: 100%;
+  height: 400px;
+}
+
 /** card service section  */
 
 #smartsafety-card-service {
@@ -4102,6 +4046,55 @@ h6 {
   color: #7a7a7a;
   margin-top: 2rem;
 }
+#goodeva-news-section .card-deck {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+#goodeva-news-section .card {
+  width: 25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#goodeva-news-section .card .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#goodeva-news-section .card-body {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: #02060973;
+  font-size: 12px;
+  top: 0;
+  border-radius: 1rem;
+}
+
+#goodeva-news-section .card-info {
+  bottom: 0;
+  position: absolute;
+  padding: 1rem;
+}
+
+#goodeva-news-section .card-deck .card p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: left;
+  color: #fff;
+}
 
 #goodeva-news-section .nav-underline {
   border: none;
@@ -4133,58 +4126,6 @@ h6 {
   color: #1d1d1d;
 }
 
-#goodeva-news-section .card-deck {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 3rem;
-  padding-bottom: 1rem;
-}
-
-#goodeva-news-section .card {
-  width: 25rem;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-#goodeva-news-section .card .card-img-top {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-#goodeva-news-section .card .card-img-top.undp {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-  object-position: 0%;
-}
-
-#goodeva-news-section .card-body {
-  position: absolute;
-  color: #fff;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  background: #02060973;
-  font-size: 12px;
-  top: 0;
-  border-radius: 1rem;
-}
-
-#goodeva-news-section .card-body p {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 14.52px;
-  text-align: left;
-  color: #fff;
-}
-
 #goodeva-news-section .card-deck .card-logo {
   max-width: 10rem;
 }
@@ -4203,30 +4144,6 @@ h6 {
 
 #goodeva-news-section .card-deck .card-logo.pertanian {
   width: 10rem;
-}
-
-#goodeva-news-section .card-title.asean {
-  padding-top: 7.3rem;
-}
-
-#goodeva-news-section .card-title.kadin {
-  padding-top: 7.3rem;
-}
-
-#goodeva-news-section .card-title.b20 {
-  padding-top: 5rem;
-}
-
-#goodeva-news-section .card-title.lkpp {
-  padding-top: 7.3rem;
-}
-
-#goodeva-news-section .card-title.undp {
-  padding-top: 7.3rem;
-}
-
-#goodeva-news-section .card-title.pertanian {
-  padding-top: 7.3rem;
 }
 
 /** goodeva carousel  */
@@ -4789,7 +4706,7 @@ h6 {
   /** product detail improve mobile */
 
   #product-detail-improve-mobile {
-    background-image: url('../img/salestrace/bg-improve.png');
+    background-image: url("../img/salestrace/bg-improve.png");
     box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
     width: 100%;
     height: 80vh;
