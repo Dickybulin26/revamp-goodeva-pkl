@@ -277,9 +277,9 @@ h6 {
   visibility: visible;
 }
 
-.navbar .bahasa {
+/* .navbar .bahasa {
   padding-left: 20rem;
-}
+} */
 
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
@@ -2704,6 +2704,7 @@ h6 {
     line-height: 28.8px;
     text-align: left;
     color: #000;
+    padding-right: 2rem;
   }
 
   #increase-feature-mobile p {
@@ -2712,7 +2713,7 @@ h6 {
     font-weight: 400;
     line-height: 24.46px;
     text-align: left;
-
+    padding-right: 2rem;
     color: #737373;
   }
 
@@ -2876,6 +2877,7 @@ h6 {
     font-weight: 400;
     line-height: 24.46px;
     text-align: left;
+    color: #000;
   }
 
   #faq-section .text-container .accordion-header {
@@ -3197,12 +3199,14 @@ h6 {
 
 #salestrace-benifit h1 {
   margin: 0 0 29px;
-  font-size: 58px;
-  font-weight: 600;
-  line-height: 64px;
-  color: #fff;
-  letter-spacing: 3px;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  letter-spacing: -0.03em;
+  text-align: left;
   word-wrap: break-word;
+  color: #fff;
 }
 
 #salestrace-benifit .company-name {
@@ -3216,6 +3220,7 @@ h6 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 19px;
+  padding-right: 13rem;
 }
 
 #salestrace-benifit .benifit-nav {
@@ -3370,11 +3375,15 @@ h6 {
 
 /** Hero Section  */
 #smartsafety-hero {
-  background-color: #fff;
-  margin-top: -8rem;
   border-radius: 5rem 5rem 0 0;
   padding-top: 10rem;
   font-family: "Inter", sans-serif;
+  background-image: url("../img/smartsafety/smartsafety-hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  background-size: cover;
+  height: auto !important;
+  position: relative;
 }
 
 #smartsafety-hero .text-container {
@@ -3390,7 +3399,7 @@ h6 {
   padding-top: 1rem;
   max-width: 50rem;
   height: 81px;
-  color: #404040;
+  color: #fff;
   line-height: 121px;
   letter-spacing: -5%;
   margin-bottom: 5rem;
@@ -3448,14 +3457,107 @@ h6 {
   padding-right: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  #smartsafety-hero-mobile {
+    display: none !important;
+  }
+}
+
+/** salestrace hero mobile */
+@media screen and (max-width: 768px) {
+  #smartsafety-hero {
+    display: none !important;
+  }
+
+  /** Hero Section  */
+  #smartsafety-hero-mobile {
+    padding-top: 15rem;
+    font-family: "Inter", sans-serif;
+    background-image: url("../img/smartsafety/smartsafety-hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    background-size: cover;
+    height: 130vh;
+    position: relative;
+  }
+
+  #smartsafety-hero-mobile .text-container {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #smartsafety-hero-mobile h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.73px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 1.5rem;
+  }
+
+  #smartsafety-hero-mobile h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 19.36px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #26a7b5;
+  }
+
+  #smartsafety-hero-mobile p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #404040;
+  }
+
+  #smartsafety-hero-mobile .bg-hero {
+    width: 90%;
+    height: auto !important;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+
+  #smartsafety-hero-mobile .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    display: inline-block;
+    padding: 12px 45px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #26a7b5;
+    margin-bottom: 3rem;
+  }
+
+  #smartsafety-hero-mobile .btn-get-started:hover {
+    background: #abe1e8;
+  }
+
+  #smartsafety-hero-mobile .btn-get-started span {
+    font-size: 14px;
+    padding-right: 30px;
+  }
+}
+
 /** banner section */
 
-.banner-section {
+#banner-section {
   background-color: #fff;
   margin-bottom: 2rem;
 }
 
-.banner-section .title-banner h2 {
+#banner-section .title-banner h2 {
   color: #1d1d11;
   font-family: "Inter", sans-serif;
   font-size: 40px;
@@ -3463,21 +3565,68 @@ h6 {
   line-height: 52px;
   letter-spacing: -0.03em;
   text-align: center;
+  padding-left: 16rem;
+  padding-right: 16rem;
 }
 
-.banner-section .title-banner p {
+#banner-section .title-banner p {
   color: #878c91;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 39.6px;
   text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
-.banner-section img {
+#banner-section img {
   width: 100%;
   height: auto;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #banner-section .banner-img-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner-section .title-banner h2 {
+    color: #1d1d11;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #banner-section .title-banner p {
+    color: #878c91;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #banner-section img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain;
+    margin-top: 2rem;
+  }
+
+  #banner-section .banner-img {
+    display: none !important;
+  }
 }
 
 /** valued client section */
@@ -3522,11 +3671,43 @@ h6 {
   object-fit: contain;
 }
 
+@media screen and (min-width: 768px) {
+  #smartsafety-valued-client .logo-valued-client-mobile {
+    display: none !important;
+  }
+
+  #smartsafety-valued-client .title-valued-client h3 {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
-  #smartsafety-valued-client .row img {
+  /* #smartsafety-valued-client .row img {
     padding: 5px 10px;
     width: 100%;
     height: auto;
+  } */
+
+  #smartsafety-valued-client .title-valued-client h2 {
+    display: none !important;
+  }
+
+  #smartsafety-valued-client .title-valued-client h3 {
+    color: #1d1d11;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  #smartsafety-valued-client .title-valued-client p {
+    display: none !important;
+  }
+
+  #smartsafety-valued-client .logo-valued-client {
+    display: none !important;
   }
 }
 
@@ -3635,6 +3816,12 @@ h6 {
   text-align: left;
 }
 
+@media screen and (max-width: 768px) {
+  #smartsafety-card-benifit {
+    display: none !important;
+  }
+}
+
 /** region section */
 
 #region-section {
@@ -3688,9 +3875,83 @@ h6 {
   height: auto;
 }
 
-#chartdiv {
+.chartdiv {
   width: 100%;
   height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  #region-section-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #region-section {
+    display: none !important;
+  }
+
+  #region-section-mobile {
+    color: #080808;
+    font-size: 14px;
+    background: #f7fbfe;
+    display: block;
+  }
+  #region-section-mobile .title-banner h2 {
+    color: #1d1d11;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  #region-section-mobile .title-banner p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.46px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+  #region-section-mobile .city-list {
+    margin-bottom: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    color: #737373;
+  }
+
+  #region-section-mobile .city-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #region-section-mobile .city-list ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  #region-section-mobile .city-list ul li img {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: auto;
+  }
+
+  #region-section-mobile .increas-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .chartdiv {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /** card service section  */
@@ -3761,11 +4022,7 @@ h6 {
 
 #smartsafety-card-service .card-deck .card-logo {
   max-width: 4rem;
-  padding-top: 3rem;
-}
-
-#smartsafety-card-service .card-deck .card-logo.b20 {
-  width: 5rem;
+  padding-bottom: 3rem;
 }
 
 #smartsafety-card-service .card-title {
@@ -3784,6 +4041,82 @@ h6 {
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  #smartsafety-card-service .title-service h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #000;
+  }
+
+  #smartsafety-card-service .title-service p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.46px;
+    text-align: center;
+    color: #000;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #smartsafety-card-service .card {
+    width: 22rem;
+    height: 12rem;
+    border-radius: 1rem;
+    transition: transform 0.5s;
+  }
+
+  #smartsafety-card-service .card-deck {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #smartsafety-card-service .card-body {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #111c25;
+    font-size: 12px;
+    top: 0;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  #smartsafety-card-service .card-deck .card-logo {
+    width: 9rem;
+    height: 7rem;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  #smartsafety-card-service .card-body p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.74px;
+    text-align: left;
+
+  }
+
+  #smartsafety-card-service .card-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
 }
 
 /*?  halaman goodeva interprise  */
