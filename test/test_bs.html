@@ -30,208 +30,298 @@
 </head>
 
 <style>
-  /** salestrace-corousel */
-  #salestrace-benifit {
-    background-color: rgba(21, 25, 28, 1);
-    margin-bottom: 1rem;
+  
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #384046;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #384046;
+  text-decoration: none;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4f5a62;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #26a7b5;
+}
+
+/* dropdown */
+/* dropdown product */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 0 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #1d1d1d;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+/* dropdown company */
+.navbar .dropdown-company ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 0 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 275px;
+  min-height: 65px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+}
+
+.navbar .dropdown-company ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1d1d1d;
+  display: block;
+}
+
+.sub-link {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #797979;
+  padding-left: 2px;
+  text-align: start;
+  display: block;
+  text-transform: capitalize;
+}
+
+.navbar .dropdown-company li:hover {
+  background-color: #9898989b;
+  transition: 0.25s;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+/* .navbar .bahasa {
+  padding-left: 20rem;
+} */
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
   }
 
-  #salestrace-benifit img {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-    padding: 0;
-    color: #fff;
-    object-fit: cover;
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+** Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #384046;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
   }
 
-  #salestrace-benifit .bg-salestrace-benifit {
-    width: 100%;
-    height: auto;
+  .navbar ul {
+    display: none;
   }
+}
 
-  #salestrace-benifit .container {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -50%);
-    margin-left: 2rem;
-  }
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(33, 38, 42, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
 
-  #salestrace-benifit h1 {
-    margin: 0 0 29px;
-    font-size: 58px;
-    font-weight: 600;
-    line-height: 64px;
-    color: #fff;
-    letter-spacing: 3px;
-    word-wrap: break-word;
-  }
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
 
-  #salestrace-benifit .company-name {
-    font-size: 18px;
-    font-weight: 1;
-    letter-spacing: 3px;
-    color: #fff;
-  }
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
 
-  #salestrace-benifit h2 {
-    color: #fff;
-    margin-bottom: 30px;
-    font-size: 19px;
-  }
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #384046;
+}
 
-  #salestrace-benifit .benifit-nav {
-    display: flex !important;
-    align-items: center !important;
-  }
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #3498db;
+}
 
-  #salestrace-benifit .corousel-nav {
-    display: flex !important;
-    padding: 16px 32px;
-    border-radius: 30px;
-    transition: ease-in-out 0.3s;
-    color: #fff;
-    border: #fff 1px solid;
-    text-align: center;
-    align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 2rem;
-  }
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
 
-  #salestrace-benifit .corousel-nav:hover {
-    background: #fff;
-    color: #000;
-  }
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
 
-  #salestrace-benifit .corousel-nav span {
-    font-size: 20px;
-    text-align: center;
-  }
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
 
-  #salestrace-benifit .benifit-nav p {
-    margin-top: auto;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
 
-  #salestrace-benifit .benifit-nav p u {
-    color: #fff;
-  }
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
 
-  #salestrace-benifit .text-salestrace-benifit {
-    right: 0;
-    display: flex;
-    padding-left: 40rem;
-  }
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #3498db;
+}
 
-  @media (min-width: 768px) {
-    #salestrace-benifit-mobile {
-      display: none !important;
-    }
-  }
-
-  /** salestrace-corousel mobile */
-  @media (max-width: 768px) {
-    #salestrace-benifit {
-      display: none !important;
-    }
-
-    #salestrace-benifit-mobile {
-      background-color: #15191C;
-      margin-bottom: 15rem;
-      margin-top: 15rem;
-    }
-
-    #salestrace-benifit-mobile img {
-      width: 100%;
-      height: 30vh;
-      background-size: cover;
-      position: relative;
-      padding: 0;
-      color: #fff;
-      object-fit: cover;
-    }
-
-    #salestrace-benifit-mobile .container {
-      z-index: 5 !important;
-      padding-top: 2rem;
-    }
-
-    #salestrace-benifit-mobile h1 {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 31.2px;
-      letter-spacing: -0.03em;
-      text-align: left;
-      color: #fff;
-    }
-
-    #salestrace-benifit-mobile .company-name {
-      font-size: 18px;
-      font-weight: 1;
-      letter-spacing: 3px;
-      color: #fff;
-    }
-
-    #salestrace-benifit-mobile h2 {
-      color: #fff;
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 21px;
-      text-align: left;
-      padding-right: 3rem;
-    }
-
-    #salestrace-benifit-mobile .benifit-nav {
-      display: flex !important;
-      align-items: center !important;
-      margin-bottom: 2rem;
-      justify-content: center;
-    }
-
-    #salestrace-benifit-mobile .corousel-nav {
-      display: flex !important;
-      text-align: center;
-      align-items: center;
-      padding: 5px 28px;
-      border-radius: 30px;
-      transition: ease-in-out 0.3s;
-      color: #fff;
-      border: #fff 1px solid;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      margin-top: 2rem;
-    }
-
-    #salestrace-benifit-mobile .corousel-nav:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    #salestrace-benifit-mobile .corousel-nav span {
-      font-size: 20px;
-      text-align: center;
-    }
-
-    #salestrace-benifit-mobile .benifit-nav p {
-      margin-top: auto;
-      margin-right: 1rem;
-      margin-left: 1rem;
-    }
-
-    #salestrace-benifit-mobile .benifit-nav p u {
-      color: #fff;
-    }
-
-    #salestrace-benifit-mobile .text-salestrace-benifit {
-      display: flex;
-    }
-  }
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
 </style>
 
 <body>
@@ -321,93 +411,111 @@
   <!-- End Header -->
 
   <main id="main">
-
-    <!-- ======= salestrace-carousel section ======= -->
-    <section id="salestrace-benifit" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="bg-salestrace-benifit">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="col-lg-6 col-sm-10">
-                <img src="../assets/img/salestrace/carousel-benifit1.png" class="d-block" alt="" />
-
+    <section class="product-detail-content" id="product-detail-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="side-content">
+              <div class="client-side mb-2">
+                <h4>Client</h4>
+                <img src="../assets/img/logo-b20_2.png" alt="B20 Logo" />
               </div>
-              <div class="col-lg-10 col-sm-10 text-salestrace-benifit">
-                <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
-                  <h1>Targeting Sales</h1>
-                  <h2>
-                    Setup a target for a group of sales, and you can <br />
-                    track selling achievement in realtime in the apps.
-                  </h2>
-
-                  <div class="benifit-nav">
-                    <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
-                      data-bs-slide="prev">
-                      <span><i class="bi bi-arrow-left"></i></span>
-                    </a>
-
-                    <p><u>01</u>/03</p>
-
-                    <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
-                      data-bs-slide="next">
-                      <span><i class="bi bi-arrow-right"></i></span>
-                    </a>
-                  </div>
-                </div>
+              <div class="field-side mb-2">
+                <h4>Field</h4>
+                <p>Global Organization</p>
+              </div>
+              <div class="scale-enterprise mb-2">
+                <h4>Scale Enterprises</h4>
+                <p>> 100.000 Employee</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-lg-6 col-sm-10">
-                <img src="../assets/img/salestrace/carousel-benifit2.png" class="d-block" alt="" />
+          </div>
 
-              </div>
-              <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
-                <span class="company-name">Goodeva Technology</span>
-                <h1>Targeting Sales</h1>
-                <h2>
-                  Setup a target for a group of sales, and you can <br />
-                  track selling achievement in realtime in the apps.
-                </h2>
-                <div class="benifit-nav">
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span><i class="bi bi-arrow-left"></i></span>
-                  </a>
-
-                  <p><u>02</u>/03</p>
-
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span><i class="bi bi-arrow-right"></i></span>
-                  </a>
-                </div>
+          <div class="col-md-9 col-xs-12 content">
+            <div class="content-title">
+              <h2>
+                Goodeva Enterprise offers a conference portal creation
+                solution custom-made, designed specifically to meet B20 unique
+                needs.
+              </h2>
+              <div class="btn-paragraph">
+                <button class="btn-product-detail-content scrollto">
+                  Problem
+                </button>
+                <button class="btn-product-detail-content scrollto">
+                  Solution
+                </button>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="col-lg-6 col-sm-10">
-                <img src="../assets/img/salestrace/card-benefit3.png" class="d-block" alt="" />
+            <hr />
+            <div class="problem-text">
+              <h3>Problem</h3>
+              <p>
+                The B20 is an international business forum composed of
+                representatives from the G20 business community, serving as a
+                platform for dialogue between global business leaders and
+                governments. With members spread across various countries, the
+                B20 faces challenges in coordinating and holding effective and
+                efficient meetings. In this context, the need for online
+                conference portals becomes increasingly urgent to maintain
+                continuity of communication and collaboration.
+              </p>
+              <p>
+                The main challenge B20 faced was the need to create a platform
+                that was able to accommodate multiple languages, time zones,
+                and ensure interactive participation from all its members. B20
+                members from diverse backgrounds and countries require easy
+                and intuitive access to the platform, with the ability to
+                participate in video conferences, share important documents,
+                and collaborate through discussion forums. This diversity of
+                members also demands solid multi-lingual support to ensure all
+                participants can participate without language barriers.
+              </p>
+            </div>
+            <div class="solution-text">
+              <h3>Solution</h3>
+              <p>
+                Goodeva Enterprise offers custom-made conference portal
+                creation solutions, designed specifically to meet B20's unique
+                needs. The first step was to conduct an in-depth needs
+                analysis involving the Goodeva technical team and B20
+                representatives.
+              </p>
+              <p>
+                Through a series of workshops and discussions, Goodeva
+                identified the key features needed, such as a secure document
+                management system, and interactive discussion forums. The
+                platform is also designed with an intuitive user interface to
+                ensure easy access for all members, regardless of their
+                technical background.
+              </p>
 
-              </div>
-              <div class="corusel-caption container text-start text-md-right justify-content-right w-50">
-                <span class="company-name">Goodeva Technology</span>
-                <h1>Targeting Sales</h1>
-                <h2>
-                  Setup a target for a group of sales, and you can <br />
-                  track selling achievement in realtime in the apps.
-                </h2>
+              <img
+                class="content-img"
+                src="../assets/img/detail-product.png"
+                alt=""
+              />
 
-                <div class="benifit-nav">
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span><i class="bi bi-arrow-left"></i></span>
-                  </a>
-
-                  <p><u>03</u>/03</p>
-
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span><i class="bi bi-arrow-right"></i></span>
-                  </a>
+              <p>
+                Implementation of this solution ensures that the B20 can carry
+                out its functions more effectively and efficiently,
+                facilitating smooth communication and collaboration among its
+                members in various countries.
+              </p>
+              <div class="row">
+                <div class="col-md-2">
+                  <img
+                    class="client-img"
+                    src="../assets/img/logo-b20_2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-10">
+                  <p>
+                    Council Platform Untuk B20 <br />
+                    An advanced digital solution designed to optimize
+                    collaboration and communication between B20 members.
+                  </p>
                 </div>
               </div>
             </div>
@@ -416,89 +524,119 @@
       </div>
     </section>
 
-    <!-- ======= salestrace-carousel mobile ======= -->
-    <section id="salestrace-benifit-mobile" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="bg-salestrace-benifit">
-        <div id="salestraceCarouselMobile" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-img">
-                <img src="../assets/img/salestrace/carousel-benifit1.png" class="d-block" alt="" />
+    <section
+      class="product-detail-content-mobile"
+      id="product-detail-content-mobile"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="content-title">
+              <h2>
+                Goodeva Enterprise offers a conference portal creation
+                solution custom-made, designed specifically to meet B20 unique
+                needs.
+              </h2>
+              <div class="btn-paragraph">
+                <button class="btn-product-detail-content-mobile scrollto">
+                  Problem
+                </button>
+                <button class="btn-product-detail-content-mobile scrollto">
+                  Solution
+                </button>
               </div>
-              <div class="text-salestrace-benifit">
-                <div class="corusel-caption container">
-                  <h1>Targeting Sales</h1>
-                  <h2>
-                    Setup a target for a group of sales, and you can 
-                    track selling achievement in realtime in the apps.
-                  </h2>
+            </div>
+          </div>
 
-                  <div class="benifit-nav">
-                    <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
-                      data-bs-slide="prev">
-                      <span><i class="bi bi-arrow-left"></i></span>
-                    </a>
+          <div class="col-md-3">
+            <div class="side-content">
+              <div class="client-side mb-2">
+                <h4>Client</h4>
+                <img src="../assets/img/logo-b20_2.png" alt="B20 Logo" />
+              </div>
+              <div class="field-side mb-2">
+                <h4>Field</h4>
+                <p>Global Organization</p>
+              </div>
+              <div class="scale-enterprise mb-2">
+                <h4>Scale Enterprises</h4>
+                <p>> 100.000 Employee</p>
+              </div>
+            </div>
+          </div>
 
-                    <p><u>01</u>/03</p>
+          <div class="col-md-9 col-xs-12 content">
+            <hr />
+            <div class="problem-text">
+              <h3>Problem</h3>
+              <p>
+                The B20 is an international business forum composed of
+                representatives from the G20 business community, serving as a
+                platform for dialogue between global business leaders and
+                governments. With members spread across various countries, the
+                B20 faces challenges in coordinating and holding effective and
+                efficient meetings. In this context, the need for online
+                conference portals becomes increasingly urgent to maintain
+                continuity of communication and collaboration.
+              </p>
+              <p>
+                The main challenge B20 faced was the need to create a platform
+                that was able to accommodate multiple languages, time zones,
+                and ensure interactive participation from all its members. B20
+                members from diverse backgrounds and countries require easy
+                and intuitive access to the platform, with the ability to
+                participate in video conferences, share important documents,
+                and collaborate through discussion forums. This diversity of
+                members also demands solid multi-lingual support to ensure all
+                participants can participate without language barriers.
+              </p>
+            </div>
+            <div class="solution-text">
+              <h3>Solution</h3>
+              <p>
+                Goodeva Enterprise offers custom-made conference portal
+                creation solutions, designed specifically to meet B20's unique
+                needs. The first step was to conduct an in-depth needs
+                analysis involving the Goodeva technical team and B20
+                representatives.
+              </p>
+              <p>
+                Through a series of workshops and discussions, Goodeva
+                identified the key features needed, such as a secure document
+                management system, and interactive discussion forums. The
+                platform is also designed with an intuitive user interface to
+                ensure easy access for all members, regardless of their
+                technical background.
+              </p>
 
-                    <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
-                      data-bs-slide="next">
-                      <span><i class="bi bi-arrow-right"></i></span>
-                    </a>
+              <img
+                class="content-img"
+                src="../assets/img/detail-product.png"
+                alt=""
+              />
+
+              <p>
+                Implementation of this solution ensures that the B20 can carry
+                out its functions more effectively and efficiently,
+                facilitating smooth communication and collaboration among its
+                members in various countries.
+              </p>
+              <div class="product-detail-content-footer-mobile">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img
+                      class="client-img"
+                      src="../assets/img/logo-b20_2.png"
+                      alt=""
+                    />
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-lg-6 col-sm-10">
-                <img src="../assets/img/salestrace/carousel-benifit2.png" class="d-block" alt="" />
-
-              </div>
-              <div class="corusel-caption container">
-                <h1>Targeting Sales</h1>
-                <h2>
-                  Setup a target for a group of sales, and you can 
-                  track selling achievement in realtime in the apps.
-                </h2>
-                <div class="benifit-nav">
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
-                    data-bs-slide="prev">
-                    <span><i class="bi bi-arrow-left"></i></span>
-                  </a>
-
-                  <p><u>02</u>/03</p>
-
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
-                    data-bs-slide="next">
-                    <span><i class="bi bi-arrow-right"></i></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-lg-6 col-sm-10">
-                <img src="../assets/img/salestrace/card-benefit3.png" class="d-block" alt="" />
-
-              </div>
-              <div class="corusel-caption container">
-                <h1>Targeting Sales</h1>
-                <h2>
-                  Setup a target for a group of sales, and you can 
-                  track selling achievement in realtime in the apps.
-                </h2>
-
-                <div class="benifit-nav">
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
-                    data-bs-slide="prev">
-                    <span><i class="bi bi-arrow-left"></i></span>
-                  </a>
-
-                  <p><u>03</u>/03</p>
-
-                  <a href="#" class="corousel-nav scrollto" data-bs-target="#salestraceCarouselMobile"
-                    data-bs-slide="next">
-                    <span><i class="bi bi-arrow-right"></i></span>
-                  </a>
+                  <div class="col-md-10 col-xs-5">
+                    <p>
+                      <span>Council Platform Untuk B20 </span><br />
+                      An advanced digital solution designed to optimize
+                      collaboration and communication between B20 members.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -506,7 +644,9 @@
         </div>
       </div>
     </section>
+
   </main>
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

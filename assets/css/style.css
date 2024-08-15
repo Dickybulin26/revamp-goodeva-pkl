@@ -1215,7 +1215,7 @@ h6 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 #news-section .card {
@@ -1294,8 +1294,10 @@ h6 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
   }
 
   #news-section-mobile .card {
@@ -2782,6 +2784,7 @@ h6 {
   letter-spacing: -0.03em;
   text-align: left;
   color: #000;
+  padding-right: 10rem;
 }
 
 #faq-section p {
@@ -2792,6 +2795,7 @@ h6 {
   letter-spacing: -0.03em;
   text-align: left;
   color: #737373;
+  padding-right: 12rem;
 }
 
 #faq-section .text-product .increas-list ul {
@@ -2862,6 +2866,10 @@ h6 {
     padding-top: 0;
   }
 
+  #faq-section .text-container {
+    margin-bottom: 2rem;
+  }
+
   #faq-section h3 {
     font-family: "Inter", sans-serif;
     font-size: 24px;
@@ -2869,6 +2877,7 @@ h6 {
     line-height: 31.2px;
     letter-spacing: -0.02em;
     text-align: left;
+    padding-right: 0;
   }
 
   #faq-section p {
@@ -2878,6 +2887,7 @@ h6 {
     line-height: 24.46px;
     text-align: left;
     color: #000;
+    padding-right: 0;
   }
 
   #faq-section .text-container .accordion-header {
@@ -3969,6 +3979,8 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: #000;
+  padding-right: 22rem;
+  padding-left: 22rem;
 }
 
 #smartsafety-card-service .title-service p {
@@ -3979,6 +3991,8 @@ h6 {
   text-align: center;
   color: #000;
   margin-top: 1rem;
+  padding-left: 17rem;
+  padding-right: 17rem;
 }
 
 #smartsafety-card-service .card-deck {
@@ -3992,19 +4006,13 @@ h6 {
 
 #smartsafety-card-service .card {
   width: 20rem;
+  height: 40vh;
   border-radius: 1rem;
   transition: transform 0.5s;
 }
 
 #smartsafety-card-service .card:hover {
   transform: scale(1.1);
-}
-
-#smartsafety-card-service .card .card-img-top {
-  width: 100%;
-  height: 40vh;
-  object-fit: cover;
-  border-radius: 1rem;
 }
 
 #smartsafety-card-service .card-body {
@@ -4052,6 +4060,8 @@ h6 {
     letter-spacing: -0.02em;
     text-align: center;
     color: #000;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   #smartsafety-card-service .title-service p {
@@ -4101,21 +4111,11 @@ h6 {
   }
 
   #smartsafety-card-service .card-body p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21.74px;
     text-align: left;
-
-  }
-
-  #smartsafety-card-service .card-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 19.2px;
-    text-align: left;
-    margin-bottom: 2rem;
   }
 }
 
@@ -4167,25 +4167,6 @@ h6 {
   width: 50%;
   height: 100px;
   object-fit: contain;
-}
-
-#goodeva-hero .btn-learn-more {
-  background-color: #26a7b5;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 3 !important;
-}
-
-#goodeva-hero .btn-learn-more:hover {
-  background-color: #4ed8e7;
-  color: #fff;
 }
 
 #goodeva-hero .btn-get-started {
@@ -4272,6 +4253,186 @@ h6 {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  #goodeva-hero-mobile {
+    display: none !important;
+  }
+}
+
+/** goodeva-hero mobile */
+@media screen and (max-width: 768px) {
+  #goodeva-hero {
+    display: none !important;
+  }
+
+  #goodeva-hero-mobile {
+    background-color: #fff;
+    padding-top: 6rem;
+  }
+
+  #goodeva-hero-mobile .text-product {
+    padding-top: 2rem;
+  }
+
+  #goodeva-hero-mobile .text-product h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 35.2px;
+    text-align: left;
+  }
+
+  #goodeva-hero-mobile .text-product p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: #878c91;
+  }
+
+  #goodeva-hero-mobile .product-img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  #goodeva-hero-mobile .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding: 12px 45px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #26a7b5;
+    text-align: center;
+    width: 100%;
+  }
+
+  #goodeva-hero-mobile .btn-get-started:hover {
+    background: #abe1e8;
+  }
+
+  #goodeva-hero-mobile .btn-get-started span {
+    font-size: 14px;
+    padding-right: 20px;
+  }
+
+  #goodeva-hero-mobile .card-deck {
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #goodeva-hero-mobile .card {
+    width: 22rem;
+    height: 12rem;
+    border-radius: 1rem;
+    transition: transform 0.5s;
+  }
+
+  #goodeva-hero-mobile .card:hover {
+    transform: scale(1.1);
+  }
+
+  #goodeva-hero-mobile .card-body {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #111c25;
+    font-size: 12px;
+    top: 0;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  #goodeva-hero-mobile .card-deck .card-logo {
+    width: 9rem;
+    height: 7rem;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  #goodeva-hero-mobile .card-body p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  #goodeva-hero-mobile .card-title {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+}
+
+/** goodeva finished project section  */
+
+#goodeva-finished-project {
+  background-color: #f1f5f9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#goodeva-finished-project h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #000;
+
+  padding-right: 8rem;
+  padding-bottom: 1rem;
+}
+
+#goodeva-finished-project p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: left;
+  color: #878c91;
+}
+
+@media screen and (max-width: 768px) {
+  #goodeva-finished-project h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 41.6px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #000;
+
+    padding: 0;
+  }
+
+  #goodeva-finished-project p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #878c91;
+  }
+}
+
 /** goodeva-valued-client section */
 
 #goodeva-valued-client {
@@ -4320,33 +4481,265 @@ h6 {
     width: 100%;
     height: auto;
   }
+
+  #goodeva-valued-client .title-valued-client h2 {
+    color: #1d1d11;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  #goodeva-valued-client .title-valued-client p {
+    display: none !important;
+  }
 }
 
-/** goodeva finished project section  */
+/** goodeva carousel  */
 
-#goodeva-finished-project {
-  background-color: #f1f5f9;
+#goodeva-carousel {
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+#goodeva-carousel .carousel {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#goodeva-carousel .carousel-inner .carousel-item .carousel-img {
+  width: 100%;
+  height: 614px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  color: white !important;
+  text-align: left;
+  background-color: #00000076;
+  border-radius: 1rem;
 }
 
-#goodeva-finished-project h3 {
+#goodeva-carousel .carousel-item .carousel-caption .carousel-logo {
+  width: 10rem;
+  height: auto;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .carousel-title {
+  padding-top: 7rem;
   font-family: "Inter", sans-serif;
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 52px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 65px;
   letter-spacing: -0.03em;
   text-align: left;
-  color: #000;
 }
 
-#goodeva-finished-project p {
+#goodeva-carousel .carousel-item .carousel-caption .carousel-text {
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
   text-align: left;
-  color: #878c91;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .btn-see-more {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .btn-see-more:hover {
+  background: #fff;
+  color: #000;
+}
+
+#goodeva-carousel .carousel-item .carousel-caption .btn-see-more span {
+  padding-right: 20px;
+}
+
+#goodeva-carousel .benifit-nav {
+  display: flex !important;
+  align-items: center !important;
+}
+
+#goodeva-carousel .corousel-nav {
+  display: flex !important;
+  padding: 10px 32px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  border: #fff 1px solid;
+  text-align: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+#goodeva-carousel .corousel-nav:hover {
+  background: #fff;
+  color: #000;
+}
+
+#goodeva-carousel .corousel-nav span {
+  font-size: 20px;
+  text-align: center;
+}
+
+#goodeva-carousel .benifit-nav p {
+  margin-top: auto;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #9c9c9c;
+}
+
+#goodeva-carousel .benifit-nav p u {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #goodeva-carousel {
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+  }
+
+  #goodeva-carousel .carousel {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  #goodeva-carousel .carousel-inner .carousel-item .carousel-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    color: white !important;
+    text-align: left;
+    background-color: #00000076;
+    border-radius: 1rem;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption .carousel-logo {
+    width: 4rem;
+    height: auto;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption .carousel-title {
+    padding-top: 2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 31.2px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption .carousel-text {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption .btn-see-more {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    display: inline-block;
+    padding: 6px 20px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption .btn-see-more:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  #goodeva-carousel .carousel-item .carousel-caption .btn-see-more span {
+    padding-right: 20px;
+  }
+
+  #goodeva-carousel .benifit-nav {
+    display: flex !important;
+    align-items: center !important;
+    transform: translate(44%, -88%);
+  }
+
+  #goodeva-carousel .corousel-nav {
+    display: flex !important;
+    padding: 1px 15px;
+    border-radius: 30px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    border: #fff 1px solid;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  #goodeva-carousel .corousel-nav:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  #goodeva-carousel .corousel-nav span {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #goodeva-carousel .benifit-nav p {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #9c9c9c;
+    font-size: 10px;
+  }
+
+  #goodeva-carousel .benifit-nav p u {
+    color: #fff;
+  }
 }
 
 /** news-section */
@@ -4479,126 +4872,152 @@ h6 {
   width: 10rem;
 }
 
-/** goodeva carousel  */
+@media screen and (max-width: 768px) {
+  /** news-section */
 
-#goodeva-carousel {
-  margin-bottom: 5rem;
-  margin-top: 1rem;
-}
+  #goodeva-news-section {
+    background-color: #f1f5f9;
+    padding-top: 3rem;
+  }
 
-#goodeva-carousel .carousel {
-  width: 100%;
-  height: auto;
-  border-radius: 1rem;
-}
+  #goodeva-news-section .section-title h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38.73px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #1d1d11;
+  }
 
-#goodeva-carousel .carousel-inner .carousel-item .carousel-img {
-  width: 100%;
-  height: 614px;
-  object-fit: cover;
-  border-radius: 1rem;
-}
+  #goodeva-news-section .section-title span {
+    color: #26a7b5;
+  }
 
-#goodeva-carousel .carousel-item .carousel-caption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 3rem;
-  color: white !important;
-  text-align: left;
-  background-color: #00000076;
-  border-radius: 1rem;
-}
+  #goodeva-news-section .section-title p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
 
-#goodeva-carousel .carousel-item .carousel-caption .carousel-logo {
-  width: 10rem;
-  height: auto;
-}
+    margin-top: 1rem;
+    color: #7a7a7a;
+  }
 
-#goodeva-carousel .carousel-item .carousel-caption .carousel-title {
-  padding-top: 7rem;
-  font-family: "Inter", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 65px;
-  letter-spacing: -0.03em;
-  text-align: left;
-}
+  #goodeva-news-section br {
+    display: none !important;
+  }
 
-#goodeva-carousel .carousel-item .carousel-caption .carousel-text {
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 33px;
-  text-align: left;
-}
+  #goodeva-news-section .card-deck {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
 
-#goodeva-carousel .carousel-item .carousel-caption .btn-see-more {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22.4px;
-  letter-spacing: -0.02em;
-  text-align: left;
+  #goodeva-news-section .card {
+    width: 25rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
 
-  display: inline-block;
-  padding: 12px 45px;
-  border-radius: 30px;
-  transition: ease-in-out 0.3s;
-  color: #fff;
-  background: transparent;
-  border: 2px solid #fff;
-}
+  #goodeva-news-section .card .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
 
-#goodeva-carousel .carousel-item .carousel-caption .btn-see-more:hover {
-  background: #fff;
-  color: #000;
-}
+  #goodeva-news-section .card-body {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: #02060973;
+    font-size: 12px;
+    top: 0;
+    border-radius: 1rem;
+  }
 
-#goodeva-carousel .carousel-item .carousel-caption .btn-see-more span {
-  padding-right: 20px;
-}
+  #goodeva-news-section .card-info {
+    bottom: 0;
+    position: absolute;
+    padding: 1rem;
+  }
 
-#goodeva-carousel .benifit-nav {
-  display: flex !important;
-  align-items: center !important;
-}
+  #goodeva-news-section .card-deck .card p {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 14.52px;
+    text-align: left;
+    color: #fff;
+  }
 
-#goodeva-carousel .corousel-nav {
-  display: flex !important;
-  padding: 10px 32px;
-  border-radius: 30px;
-  transition: ease-in-out 0.3s;
-  color: #fff;
-  border: #fff 1px solid;
-  text-align: center;
-  align-items: center;
-  margin-top: 8rem;
-}
+  #goodeva-news-section .nav-underline {
+    border: none;
+    display: flex;
+    justify-content: center;
+    z-index: 3 !important;
+    position: relative;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+  }
 
-#goodeva-carousel .corousel-nav:hover {
-  background: #fff;
-  color: #000;
-}
+  #goodeva-news-section .nav-link {
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 12.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-top: 0;
+    padding: 6.89px 13.79px;
+    border: 2px solid #d2d2d2;
+    color: #959595;
+    border-radius: 5rem;
+  }
 
-#goodeva-carousel .corousel-nav span {
-  font-size: 20px;
-  text-align: center;
-}
+  #goodeva-news-section .nav-link:hover {
+    border: 2px solid #26a7b5;
+    color: #fff;
+    background-color: #26a7b5;
+  }
 
-#goodeva-carousel .benifit-nav p {
-  margin-top: auto;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  color: #9c9c9c;
-}
+  #goodeva-news-section .nav-link.active {
+    border: 2px solid #26a7b5;
+    color: #fff;
+    background-color: #26a7b5;
+  }
 
-#goodeva-carousel .benifit-nav p u {
-  color: #fff;
+  #goodeva-news-section .card-deck .card-logo {
+    max-width: 10rem;
+  }
+
+  #goodeva-news-section .card-deck .card-logo.b20 {
+    width: 8rem;
+  }
+
+  #goodeva-news-section .card-deck .card-logo.undp {
+    width: 5rem;
+  }
+
+  #goodeva-news-section .card-deck .card-logo.kadin {
+    width: 3rem;
+  }
+
+  #goodeva-news-section .card-deck .card-logo.pertanian {
+    width: 10rem;
+  }
 }
 
 /*? halaman detail-product */
