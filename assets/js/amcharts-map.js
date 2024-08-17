@@ -10,11 +10,21 @@
      * ---------------------------------------
      */
 
-  am4core.useTheme(am4themes_animated);
+  let width = screen.width;
 
+  function initScreen() {
+    const isMobile = width < 768;
+    const chartDivId = isMobile ? "chartdiv2" : "chartdiv";
+  
+    // Create map instance
+    return am4core.create(chartDivId, am4maps.MapChart);
+  }
+  
   // Create map instance
-  let chart = am4core.create("chartdiv", am4maps.MapChart);
-
+  let chart = initScreen();
+  
+  am4core.useTheme(am4themes_animated);
+  
   // Set map definition
   chart.geodata = am4geodata_worldHigh;
 

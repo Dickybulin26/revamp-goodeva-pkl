@@ -114,7 +114,6 @@ h6 {
   height: 70px;
   transition: all 0.5s;
   z-index: 997;
-  transition: all 0.5s;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -278,7 +277,7 @@ h6 {
 }
 
 /* .navbar .bahasa {
-  padding-left: 20rem;
+padding-left: 20rem;
 } */
 
 @media (max-width: 1366px) {
@@ -295,7 +294,7 @@ h6 {
 ** Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #384046;
+  color: #34a2af;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -304,7 +303,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #34a2af;
 }
 
 @media (max-width: 991px) {
@@ -324,8 +323,8 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(33, 38, 42, 0.9);
-  transition: 0.3s;
+  background: 0;
+  transition: 2.3s;
   z-index: 999;
 }
 
@@ -338,10 +337,10 @@ h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 9%;
+  right: 0;
+  bottom: auto;
+  left: 0;
   padding: 10px 0;
   background-color: #fff;
   overflow-y: auto;
@@ -358,7 +357,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-  color: #3498db;
+  color: #34a2af;
 }
 
 .navbar-mobile .getstarted,
@@ -369,8 +368,8 @@ h6 {
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
+  margin: 0;
+  padding: 0;
   z-index: 99;
   opacity: 1;
   visibility: visible;
@@ -379,7 +378,7 @@ h6 {
 }
 
 .navbar-mobile .dropdown ul li {
-  min-width: 200px;
+  min-width: 100%;
 }
 
 .navbar-mobile .dropdown ul a {
@@ -393,7 +392,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-  color: #3498db;
+  color: #34a2af;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -1581,18 +1580,43 @@ h6 {
 #liputan .title-liputan h2 {
   font-weight: bold;
   color: #1d1d11;
+  margin-bottom: 2rem;
+}
+
+#liputan .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+#liputan .row img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   #liputan .title-liputan h2 {
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 2rem;
   }
 
   #liputan .row img {
     padding: 5px 10px;
     width: 100%;
     height: auto;
+  }
+
+  #liputan .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -1674,7 +1698,7 @@ h6 {
 @media screen and (max-width: 768px) {
   #get-started {
     background-image: url("../img/get-started2-bg.png");
-    height: 130vh;
+    height: 136vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -2819,11 +2843,11 @@ h6 {
 }
 
 #faq-section .text-container .accordion-button::after {
-  background-image: url(/assets/img/salestrace/accordion-plus.png);
+  background-image: url("../img/salestrace/accordion-plus.png");
 }
 
 #faq-section .text-container .accordion-button:not(.collapsed)::after {
-  background-image: url(/assets/img/salestrace/accordion-min.png);
+  background-image: url("../img/salestrace/accordion-min.png");
 }
 
 #faq-section .text-container .accordion-body {
@@ -3047,7 +3071,7 @@ h6 {
 /** improve */
 
 #improve {
-  background-image: url(/assets/img/salestrace/bg-improve.png);
+  background-image: url("../img/salestrace/bg-improve.png");
   box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
 }
 
@@ -3114,7 +3138,7 @@ h6 {
   /** product detail improve mobile */
 
   #improve-mobile {
-    background-image: url(/assets/img/salestrace/bg-improve.png);
+    background-image: url("../img/salestrace/bg-improve.png");
     box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
     width: 100%;
     height: 80vh;
@@ -4006,7 +4030,7 @@ h6 {
 
 #smartsafety-card-service .card {
   width: 20rem;
-  height: 40vh;
+  height: 35vh;
   border-radius: 1rem;
   transition: transform 0.5s;
 }
@@ -4030,7 +4054,6 @@ h6 {
 
 #smartsafety-card-service .card-deck .card-logo {
   max-width: 4rem;
-  padding-bottom: 3rem;
 }
 
 #smartsafety-card-service .card-title {
@@ -5461,7 +5484,7 @@ h6 {
     background-image: url("../img/salestrace/bg-improve.png");
     box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
   }
 
