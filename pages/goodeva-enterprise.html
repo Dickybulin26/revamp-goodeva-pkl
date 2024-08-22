@@ -510,110 +510,209 @@
           </p>
         </div>
 
-        <ul class="nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">All Recent</a>
+        <ul class="nav nav-tabs nav-underline" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button"
+              role="tab" aria-controls="all" aria-selected="true">All Recent</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Government</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="government-tab" data-bs-toggle="tab" data-bs-target="#government" type="button"
+              role="tab" aria-controls="government" aria-selected="false">Government</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Corporate</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="corporate-tab" data-bs-toggle="tab" data-bs-target="#corporate" type="button"
+              role="tab" aria-controls="corporate" aria-selected="false">Corporate</button>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">International</a>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="international-tab" data-bs-toggle="tab" data-bs-target="#international"
+              type="button" role="tab" aria-controls="international" aria-selected="false">International</button>
           </li>
         </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+            <div class="card-deck">
+              <div class="card government" data-category="government">
+                <img src="../assets/img/news/lkpp.png" class="card-img-top lkpp" alt="LKPP">
+                <div class="card-body">
+                  <img class="card-logo lkpp" src="../assets/img/Logo_LKPP 1.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title lkpp">LKPP</h5>
+                    <p class="card-text">Sistem inpassing nasional yang terintegrasi dan berbasis
+                      web
+                      untuk
+                      LKPP.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card corporate" data-category="corporate">
+                <img src="../assets/img/news/b20-indonesia.png" class="card-img-top b20" alt="B20">
+                <div class="card-body">
+                  <img class="card-logo b20" src="../assets/img/news/logo-b20.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title b20">B20 Council Platform</h5>
+                    <p class="card-text">B20 adalah forum bisnis internasional yang terdiri dari
+                      perwakilan
+                      dari komunitas
+                      bisnis G20, berfungsi sebagai platform untuk dialog antara pemimpin bisnis
+                      global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card international" data-category="international">
+                <img src="../assets/img/news/asean.png" class="card-img-top asean" alt="ASEAN">
+                <div class="card-body">
+                  <img class="card-logo asean" src="../assets/img/news/asean-goodeva.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title asean">ASEAN</h5>
+                    <p class="card-text">Pengembangan dan implementasi LMS mandiri yang dapat
+                      diakses
+                      oleh
+                      semua negara
+                      anggota.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card government" data-category="government">
+                <img src="../assets/img/news/pertanian.png" class="card-img-top pertanian" alt="pertanian">
+                <div class="card-body">
+                  <img class="card-logo pertanian" src="../assets/img/news/logo-pertanian.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title pertanian">Kementrian Pertanian</h5>
+                    <p class="card-text">
+                      Special web platform for palm oil monitoring to integrate data
+                      from various sources so that it is easy to access
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card government" data-category="government">
+                <img src="../assets/img/news/vaccination.png" class="card-img-top kadin" alt="kadin">
+                <div class="card-body">
+                  <img class="card-logo kadin" src="../assets/img/news/kadin-logo 1.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title kadin">Kadin Indonesia</h5>
+                    <p class="card-text">
+                      Intergrated vaccination management system for Mutual Cooperation Vaccination
+                      needs
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card international" data-category="international">
+                <img src="../assets/img/news/undp2.png" class="card-img-top undp" alt="undp">
+                <div class="card-body">
+                  <img class="card-logo undp" src="../assets/img/news/undp-logo.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title undp">UNDP</h5>
+                    <p class="card-text">
+                      This system will integrate data from various sources into a
+                      platform that is easy to access and analyze
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="government" role="tabpanel" aria-labelledby="government-tab">
+            <div class="card-deck">
+              <div class="card government" data-category="government">
+                <img src="../assets/img/news/lkpp.png" class="card-img-top lkpp" alt="LKPP">
+                <div class="card-body">
+                  <img class="card-logo lkpp" src="../assets/img/Logo_LKPP 1.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title lkpp">LKPP</h5>
+                    <p class="card-text">Sistem inpassing nasional yang terintegrasi dan berbasis
+                      web
+                      untuk
+                      LKPP.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card government" data-category="government">
+                <img src="../assets/img/news/pertanian.png" class="card-img-top pertanian" alt="pertanian">
+                <div class="card-body">
+                  <img class="card-logo pertanian" src="../assets/img/news/logo-pertanian.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title pertanian">Kementrian Pertanian</h5>
+                    <p class="card-text">
+                      Special web platform for palm oil monitoring to integrate data
+                      from various sources so that it is easy to access
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card government" data-category="government">
+                <img src="../assets/img/news/vaccination.png" class="card-img-top kadin" alt="kadin">
+                <div class="card-body">
+                  <img class="card-logo kadin" src="../assets/img/news/kadin-logo 1.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title kadin">Kadin Indonesia</h5>
+                    <p class="card-text">
+                      Intergrated vaccination management system for Mutual Cooperation Vaccination
+                      needs
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="corporate" role="tabpanel" aria-labelledby="corporate-tab">
+            <div class="card-deck">
+              <div class="card corporate" data-category="corporate">
+                <img src="../assets/img/news/b20-indonesia.png" class="card-img-top b20" alt="B20">
+                <div class="card-body">
+                  <img class="card-logo b20" src="../assets/img/news/logo-b20.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title b20">B20 Council Platform</h5>
+                    <p class="card-text">B20 adalah forum bisnis internasional yang terdiri dari
+                      perwakilan
+                      dari komunitas
+                      bisnis G20, berfungsi sebagai platform untuk dialog antara pemimpin bisnis
+                      global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="international" role="tabpanel" aria-labelledby="international-tab">
+            <div class="card-deck">
+              <div class="card international" data-category="international">
+                <img src="../assets/img/news/undp2.png" class="card-img-top undp" alt="undp">
+                <div class="card-body">
+                  <img class="card-logo undp" src="../assets/img/news/undp-logo.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title undp">UNDP</h5>
+                    <p class="card-text">
+                      This system will integrate data from various sources into a
+                      platform that is easy to access and analyze
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card international" data-category="international">
+                <img src="../assets/img/news/asean.png" class="card-img-top asean" alt="ASEAN">
+                <div class="card-body">
+                  <img class="card-logo asean" src="../assets/img/news/asean-goodeva.png" alt="">
+                  <div class="card-info">
+                    <h5 class="card-title asean">ASEAN</h5>
+                    <p class="card-text">Pengembangan dan implementasi LMS mandiri yang dapat
+                      diakses
+                      oleh
+                      semua negara
+                      anggota.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load-more text-center">
+            <a href="#" class="btn fw-bold pt-3 pb-3">Load More <br />
+              <i class="bi bi-arrow-down"></i></a>
+          </div>
 
-        <!-- <div class="row">
-        <div class="col-lg-12">
-          <ul id="card-filters">
-            <li data-filter="*" class="filter-active">All Recent</li>
-            <li data-filter=".filter-government">Government</li>
-            <li data-filter=".filter-corporate">Corporate</li>
-            <li data-filter=".filter-international">International</li>
-          </ul>
         </div>
-      </div> -->
-
-        <div class="card-deck">
-          <div class="card">
-            <img src="../assets/img/news/lkpp.png" class="card-img-top lkpp" alt="LKPP">
-            <div class="card-body">
-              <img class="card-logo lkpp" src="../assets/img/Logo_LKPP 1.png" alt="">
-              <div class="card-info">
-                <h5 class="card-title lkpp">LKPP</h5>
-                <p class="card-text">Sistem inpassing nasional yang terintegrasi dan berbasis web untuk LKPP.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/img/news/b20-indonesia.png" class="card-img-top b20" alt="B20">
-            <div class="card-body">
-              <img class="card-logo b20" src="../assets/img/news/logo-b20.png" alt="">
-              <div class="card-info">
-                <h5 class="card-title b20">B20 Council Platform</h5>
-                <p class="card-text">B20 adalah forum bisnis internasional yang terdiri dari perwakilan dari komunitas
-                  bisnis G20, berfungsi sebagai platform untuk dialog antara pemimpin bisnis global.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/img/news/asean.png" class="card-img-top asean" alt="ASEAN">
-            <div class="card-body">
-              <img class="card-logo asean" src="../assets/img/news/asean-goodeva.png" alt="">
-              <div class="card-info">
-                <h5 class="card-title asean">ASEAN</h5>
-                <p class="card-text">Pengembangan dan implementasi LMS mandiri yang dapat diakses oleh semua negara
-                  anggota.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/img/news/pertanian.png" class="card-img-top pertanian" alt="pertanian">
-            <div class="card-body">
-              <img class="card-logo pertanian" src="../assets/img/news/logo-pertanian.png" alt="">
-              <div class="card-info">
-                <h5 class="card-title pertanian">Kementrian Pertanian</h5>
-                <p class="card-text">
-                  Special web platform for palm oil monitoring to integrate data
-                  from various sources so that it is easy to access
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/img/news/vaccination.png" class="card-img-top kadin" alt="kadin">
-            <div class="card-body">
-              <img class="card-logo kadin" src="../assets/img/news/kadin-logo 1.png" alt="">
-              <div class="card-info">
-                <h5 class="card-title kadin">Kadin Indonesia</h5>
-                <p class="card-text">
-                  Intergrated vaccination management system for Mutual Cooperation Vaccination needs
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/img/news/undp2.png" class="card-img-top undp" alt="undp">
-            <div class="card-body">
-              <img class="card-logo undp" src="../assets/img/news/undp-logo.png" alt="">
-              <div class="card-info">
-                <h5 class="card-title undp">UNDP</h5>
-                <p class="card-text">
-                  This system will integrate data from various sources into a
-                  platform that is easy to access and analyze
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="load-more text-center">
-          <a href="#" class="btn fw-bold pt-3 pb-3">Load More <br />
-            <i class="bi bi-arrow-down"></i></a>
-        </div>
-      </div>
     </section>
 
     <!-- improve section -->

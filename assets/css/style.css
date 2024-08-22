@@ -524,6 +524,13 @@ padding-left: 20rem;
   }
 }
 
+@media screen and (max-width: 1280px) {
+  #hero h1 {
+    font-size: 50px;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   #hero {
     display: none !important;
@@ -783,7 +790,7 @@ padding-left: 20rem;
   font-size: 22px;
   font-weight: 400;
   line-height: 27px;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   max-width: 35rem;
 }
 
@@ -942,7 +949,7 @@ padding-left: 20rem;
   font-size: 22px;
   font-weight: 400;
   line-height: 27px;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   max-width: 35rem;
 }
 
@@ -995,12 +1002,18 @@ padding-left: 20rem;
 }
 
 @media screen and (max-width: 1280px) {
+  #product-sales-trace .text-container {
+    padding-top: 10rem;
+    transform: translate(1.5rem, 0%);
+  }
+
   #product-sales-trace .product-img {
-    width: 200%;
-    height: 115vh;
+    width: 100%;
+    height: auto;
     object-fit: contain;
     margin-left: 3.6rem;
-    margin-top: -12rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
   }
 }
 
@@ -1088,6 +1101,10 @@ padding-left: 20rem;
   height: 30rem;
 }
 
+.product-goodeva-enterprise .row {
+  padding-top: 3rem;
+}
+
 .product-goodeva-enterprise .text-container {
   padding-top: 10rem;
   top: 70%;
@@ -1100,7 +1117,6 @@ padding-left: 20rem;
   font-size: 40px;
   padding-top: 1rem;
   max-width: 50rem;
-  height: 81px;
   color: #000;
 }
 
@@ -1108,7 +1124,7 @@ padding-left: 20rem;
   font-size: 22px;
   font-weight: 400;
   line-height: 27px;
-  padding-top: 2.5rem;
+  padding-top: 1rem;
   max-width: 35rem;
 }
 
@@ -1163,6 +1179,10 @@ padding-left: 20rem;
     margin-top: -10rem;
     margin-bottom: -5rem;
     margin-right: 5rem;
+  }
+
+  #product-goodeva-enterprise p {
+    padding-top: 1rem;
   }
 }
 
@@ -1240,6 +1260,7 @@ padding-left: 20rem;
 /** news-section */
 #news-section {
   background-color: #f1f5f9;
+  padding-top: 8rem;
 }
 
 #news-section .section-title {
@@ -1333,8 +1354,16 @@ padding-left: 20rem;
 }
 
 @media screen and (max-width: 1280px) {
+  #news-section {
+    padding-top: 9rem;
+  }
+
   #news-section .card-deck {
     gap: 1.5rem;
+  }
+
+  #news-section .card {
+    width: 24rem;
   }
 }
 
@@ -1528,6 +1557,18 @@ padding-left: 20rem;
 @media screen and (min-width: 768px) {
   #client-feedback-mobile {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #client-feedback .text-feedback {
+    padding-top: 0;
+    padding-left: 7rem;
+  }
+
+  #client-feedback .client-img img {
+    width: 65%;
+    height: 27rem;
   }
 }
 
@@ -2486,11 +2527,17 @@ padding-left: 20rem;
 
 @media screen and (max-width: 1280px) {
   #salestrace-feature1 .product-img {
-    width: 200%;
-    height: 115vh;
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    margin-left: 3rem;
-    margin-top: -13rem;
+    margin-left: 3.6rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  #salestrace-feature1 .text-container {
+    padding-top: 10rem;
+    transform: translate(1.5rem, 0);
   }
 }
 
@@ -2622,6 +2669,19 @@ padding-left: 20rem;
   }
 }
 
+@media screen and (max-width: 1280px) {
+  #salestrace-feature2 .product-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: -8rem;
+    margin-top: 0;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   #salestrace-feature4,
   #salestrace-feature2 {
@@ -2738,7 +2798,7 @@ padding-left: 20rem;
     width: 200%;
     height: 115vh;
     object-fit: contain;
-    margin-left: 9rem;
+    margin-left: 9.56rem;
     margin-top: -12rem;
   }
 }
@@ -2895,6 +2955,20 @@ padding-left: 20rem;
     object-fit: contain;
     margin-left: 1rem;
     margin-top: -10rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #increase-feature .text-product {
+    padding-top: 0 !important;
+  }
+
+  #increase-feature .product-img {
+    width: 200%;
+    height: 115vh;
+    object-fit: contain;
+    margin-left: 1rem;
+    margin-top: -14rem;
   }
 }
 
@@ -3358,10 +3432,10 @@ padding-left: 20rem;
 
 @media screen and (max-width: 1280px) {
   #improve .product-img {
-    width: 30.1%;
+    width: 30%;
     object-fit: contain;
     position: absolute;
-    transform: translate(6.5rem, -20%);
+    transform: translate(6.5rem, -21%);
   }
 }
 
@@ -4597,6 +4671,15 @@ padding-left: 20rem;
   }
 }
 
+@media screen and (max-width: 1280px) {
+  #goodeva-hero .card {
+    width: 16rem;
+    height: 33vh;
+    border-radius: 0px 35px 0px 35px;
+    transition: transform 0.5s;
+  }
+}
+
 /** goodeva-hero mobile */
 @media screen and (max-width: 768px) {
   #goodeva-hero {
@@ -5166,28 +5249,32 @@ padding-left: 20rem;
   justify-content: center;
   z-index: 3 !important;
   position: relative;
-  gap: 10rem;
+  gap: 3rem;
 }
 
 #goodeva-news-section .nav-link {
-  border: none;
-  color: #959595;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
   text-align: center;
   margin-top: 2rem;
+  padding: 6.89px 13.79px;
+  border: 2px solid #d2d2d2;
+  color: #959595;
+  border-radius: 5rem;
 }
 
 #goodeva-news-section .nav-link:hover {
-  border-bottom: 2px solid #26a7b5;
-  color: #1d1d1d;
+  border: 2px solid #26a7b5;
+  color: #fff;
+  background-color: #26a7b5;
 }
 
 #goodeva-news-section .nav-link.active {
-  border-bottom: 2px solid #26a7b5;
-  color: #1d1d1d;
+  border: 2px solid #26a7b5;
+  color: #fff;
+  background-color: #26a7b5;
 }
 
 #goodeva-news-section .card-deck .card-logo {
@@ -5217,6 +5304,15 @@ padding-left: 20rem;
 
   #goodeva-news-section .card {
     width: 22rem;
+  }
+
+  #goodeva-news-section .nav-underline {
+    border: none;
+    display: flex;
+    justify-content: center;
+    z-index: 3 !important;
+    position: relative;
+    gap: 2rem;
   }
 }
 
@@ -5649,15 +5745,15 @@ padding-left: 20rem;
   }
 
   #product-detail-improve .product-img {
-    width: 28.3%;
-    transform: translate(3.5rem, -27%);
+    width: 27%;
+    transform: translate(3.5rem, -24%);
   }
 }
 
 @media screen and (max-width: 1280px) {
   #product-detail-improve .product-img {
     width: 30%;
-    transform: translate(3.5rem, -27%);
+    transform: translate(3.5rem, -28%);
   }
 }
 
