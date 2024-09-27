@@ -528,7 +528,6 @@ padding-left: 20rem;
   #hero h1 {
     font-size: 50px;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -2679,7 +2678,6 @@ padding-left: 20rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -5504,9 +5502,17 @@ padding-left: 20rem;
   margin-left: -2rem;
 }
 
+#banner-detail-product .card-body .card-info {
+  position: absolute;
+  bottom: auto;
+  padding-bottom: 1rem;
+  padding-right: 50%;
+  padding-top: 2rem;
+  padding-left: 0;
+}
+
 #banner-detail-product .card-body .card-title {
   font-family: "Inter", sans-serif;
-  padding-top: 3rem;
   font-size: 46.98px;
   font-weight: 600;
   line-height: 61.08px;
@@ -5608,7 +5614,7 @@ padding-left: 20rem;
 }
 
 #product-detail-content .side-content img {
-  width: 10rem;
+  width: 5rem;
   height: auto;
 }
 
@@ -5619,9 +5625,10 @@ padding-left: 20rem;
 
 #product-detail-content .content .content-img {
   width: 100%;
-  height: auto;
+  height: 443px;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  object-fit: cover;
 }
 
 #product-detail-content .side-content h4 {
@@ -5679,38 +5686,63 @@ padding-left: 20rem;
   color: #fff;
 }
 
+#product-detail-content .product span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
 /** product detail improve */
 
 #product-detail-improve {
-  background-image: url("../img/salestrace/bg-improve.png");
-  box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8);
+  /* background-image: url("../img/salestrace/bg-improve.png"); */
+  /* box-shadow: inset 0 0 0 99999px rgba(36, 159, 172, 0.8); */
+  background-image: linear-gradient(to right, #249fac, #306058);
 }
 
 #product-detail-improve .text-product {
   padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #product-detail-improve h3 {
-  font-family: "Inter", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48.41px;
+  font-family: "Zoho Puvin", sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 71.5px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #fff;
+}
+
+#product-detail-improve p {
+  font-family: "Zoho Puvin", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 45px;
   text-align: left;
   color: #fff;
 }
 
 #product-detail-improve .product-img {
-  width: 25%;
+  width: 80%;
   object-fit: contain;
-  position: absolute;
-  transform: translate(6.5rem, -27%);
+  position: relative;
+  bottom: 0;
+  /* transform: translate(6.5rem, -27%); */
 }
 
 #product-detail-improve .btn-product-detail-improve {
   color: #1d1d11;
   border: none;
   border-radius: 30px;
-  padding: 8px 40px;
+  padding: 10px 40px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -5729,9 +5761,14 @@ padding-left: 20rem;
   transition: 0.5s;
 }
 
+#product-detail-improve .btn-product-detail-improve .bi {
+  margin-left: 1rem;
+}
+
 #product-detail-improve .btn-product-detail-improve:hover {
   background-position: 100% 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 
 @media screen and (max-width: 1366px) {
